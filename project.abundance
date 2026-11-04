@@ -1419,6 +1419,53 @@
       ]
     },
     {
+      "atomType": "Import",
+      "x": 0.1165,
+      "y": 0.2371,
+      "uniqueID": "id-1712",
+      "fileName": "ExampleToSlice.step",
+      "name": "Import",
+      "type": "STEP",
+      "repoOwner": "tristan-huber",
+      "repoName": "CustomSlicer",
+      "SVGwidth": 10
+    },
+    {
+      "atomType": "Gcode",
+      "x": 0.918,
+      "y": 0.3429,
+      "uniqueID": "id-1721",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Tool Size",
+          "ioValue": 6.35
+        },
+        {
+          "name": "Passes",
+          "ioValue": 1
+        },
+        {
+          "name": "Speed",
+          "ioValue": 1500
+        },
+        {
+          "name": "Cut Through",
+          "ioValue": 0
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "CustomSlicer",
+          "currentEquation": "CustomSlicer"
+        }
+      ],
+      "partName": "CustomSlicer",
+      "sortDirection": "Left"
+    },
+    {
       "atomType": "Output",
       "x": 0.98,
       "y": 0.5,
@@ -1484,16 +1531,6 @@
       "interpreterVersion": 1,
       "code": "function run(shape: Assembly) {\n  let left = Number.POSITIVE_INFINITY\n  let south = Number.POSITIVE_INFINITY\n  shape.onLeafs((leaf) => {\n    const bounds = leaf.geometry.boundingBox.bounds;\n    left = Math.min(left, bounds[0][0])\n    south = Math.min(south, bounds[0][1])\n    return leaf;\n  })\n  console.log(`left: ${left}, south: ${south}`)\n  return shape.onLeafs((leaf) => {\n    leaf.geometry = leaf.geometry.translate(-1 * left, -1 * south, 0)\n    return leaf;\n  })\n}",
       "compiledCode": "\"use strict\";\nfunction run(shape) {\n    let left = Number.POSITIVE_INFINITY;\n    let south = Number.POSITIVE_INFINITY;\n    shape.onLeafs((leaf) => {\n        const bounds = leaf.geometry.boundingBox.bounds;\n        left = Math.min(left, bounds[0][0]);\n        south = Math.min(south, bounds[0][1]);\n        return leaf;\n    });\n    console.log(`left: ${left}, south: ${south}`);\n    return shape.onLeafs((leaf) => {\n        leaf.geometry = leaf.geometry.translate(-1 * left, -1 * south, 0);\n        return leaf;\n    });\n}\n"
-    },
-    {
-      "atomType": "Import",
-      "x": 0.1543,
-      "y": 0.1686,
-      "uniqueID": "id-50",
-      "fileName": null,
-      "name": "Import",
-      "type": null,
-      "SVGwidth": 10
     },
     {
       "atomType": "GitHubMolecule",
@@ -1589,22 +1626,6 @@
       "lastReloadedFromGithubAt": 1793833309925
     },
     {
-      "atomType": "Rectangle",
-      "x": 0.0371,
-      "y": 0.7286,
-      "uniqueID": "id-52",
-      "ioValues": [
-        {
-          "name": "x length",
-          "ioValue": 15
-        },
-        {
-          "name": "y length",
-          "ioValue": 10
-        }
-      ]
-    },
-    {
       "atomType": "Intersection",
       "x": 0.6198,
       "y": 0.2457,
@@ -1619,95 +1640,6 @@
           "ioValue": "__GEOMETRY_INPUT__"
         }
       ]
-    },
-    {
-      "atomType": "Move",
-      "x": 0.0684,
-      "y": 0.84,
-      "uniqueID": "id-56",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "xDist",
-          "ioValue": 0
-        },
-        {
-          "name": "yDist",
-          "ioValue": 0
-        },
-        {
-          "name": "zDist",
-          "ioValue": 10
-        }
-      ]
-    },
-    {
-      "atomType": "Rotate",
-      "x": 0.1341,
-      "y": 0.7686,
-      "uniqueID": "id-62",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "x-axis degrees",
-          "ioValue": 0
-        },
-        {
-          "name": "y-axis degrees",
-          "ioValue": 0
-        },
-        {
-          "name": "z-axis degrees",
-          "ioValue": 45
-        }
-      ]
-    },
-    {
-      "atomType": "Loft",
-      "x": 0.1406,
-      "y": 0.6429,
-      "uniqueID": "id-68",
-      "ioValues": [
-        {
-          "name": "smooth",
-          "ioValue": false
-        },
-        {
-          "name": "Shape 1",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "Shape2",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "Shape3",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "smooth",
-          "ioValue": false
-        },
-        {
-          "name": "Shape 1",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "Shape2",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "Shape3",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ],
-      "closedSelection": 0
     },
     {
       "atomType": "Code",
@@ -1862,150 +1794,6 @@
         }
       ],
       "orientationsForHashed": 7
-    },
-    {
-      "atomType": "Molecule",
-      "x": 0.1237,
-      "y": 0.8486,
-      "uniqueID": "id-879",
-      "name": "Molecule",
-      "topLevel": false,
-      "allAtoms": [
-        {
-          "atomType": "Output",
-          "x": 0.98,
-          "y": 0.5,
-          "uniqueID": "id-881",
-          "ioValues": [
-            {
-              "name": "number or geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ]
-        },
-        {
-          "atomType": "Rectangle",
-          "x": 0.1628,
-          "y": 0.4257,
-          "uniqueID": "id-883",
-          "ioValues": [
-            {
-              "name": "x length",
-              "ioValue": 5
-            },
-            {
-              "name": "y length",
-              "ioValue": 7,
-              "currentEquation": "7"
-            }
-          ]
-        },
-        {
-          "atomType": "Move",
-          "x": 0.2904,
-          "y": 0.4486,
-          "uniqueID": "id-887",
-          "ioValues": [
-            {
-              "name": "geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "xDist",
-              "ioValue": 0
-            },
-            {
-              "name": "yDist",
-              "ioValue": 0,
-              "currentEquation": "0"
-            },
-            {
-              "name": "zDist",
-              "ioValue": 2
-            }
-          ]
-        },
-        {
-          "atomType": "Rectangle",
-          "x": 0.1745,
-          "y": 0.6943,
-          "uniqueID": "id-893",
-          "ioValues": [
-            {
-              "name": "x length",
-              "ioValue": 4
-            },
-            {
-              "name": "y length",
-              "ioValue": 5
-            }
-          ]
-        },
-        {
-          "atomType": "Loft",
-          "x": 0.4499,
-          "y": 0.5771,
-          "uniqueID": "id-897",
-          "ioValues": [
-            {
-              "name": "smooth",
-              "ioValue": false
-            },
-            {
-              "name": "Shape 1",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "Shape2",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "Shape3",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "smooth",
-              "ioValue": false
-            },
-            {
-              "name": "Shape 1",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "Shape2",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "Shape3",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ],
-          "closedSelection": 0
-        }
-      ],
-      "allConnectors": [
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-883",
-          "ap2ID": "id-887"
-        },
-        {
-          "ap2Name": "Shape 1",
-          "ap1ID": "id-887",
-          "ap2ID": "id-897"
-        },
-        {
-          "ap2Name": "Shape2",
-          "ap1ID": "id-893",
-          "ap2ID": "id-897"
-        },
-        {
-          "ap2Name": "number or geometry",
-          "ap1ID": "id-897",
-          "ap2ID": "id-881"
-        }
-      ],
-      "fileTypeVersion": 1
     },
     {
       "atomType": "GitHubMolecule",
@@ -3464,6 +3252,11 @@
       "ap2ID": "id-868"
     },
     {
+      "ap2Name": "shape",
+      "ap1ID": "id-1712",
+      "ap2ID": "id-479"
+    },
+    {
       "ap2Name": "geometry",
       "ap1ID": "id-232",
       "ap2ID": "id-1493"
@@ -3494,29 +3287,9 @@
       "ap2ID": "id-1691"
     },
     {
-      "ap2Name": "geometry",
-      "ap1ID": "id-52",
-      "ap2ID": "id-56"
-    },
-    {
-      "ap2Name": "Shape2",
-      "ap1ID": "id-52",
-      "ap2ID": "id-68"
-    },
-    {
       "ap2Name": "ShapeToExplode",
       "ap1ID": "id-540",
       "ap2ID": "id-936"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-56",
-      "ap2ID": "id-62"
-    },
-    {
-      "ap2Name": "Shape 1",
-      "ap1ID": "id-62",
-      "ap2ID": "id-68"
     },
     {
       "ap2Name": "remove",
@@ -3544,9 +3317,9 @@
       "ap2ID": "id-874"
     },
     {
-      "ap2Name": "shape",
-      "ap1ID": "id-879",
-      "ap2ID": "id-479"
+      "ap2Name": "geometry",
+      "ap1ID": "id-874",
+      "ap2ID": "id-1721"
     },
     {
       "ap2Name": "shape",
