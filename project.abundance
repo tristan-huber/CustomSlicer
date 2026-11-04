@@ -1432,8 +1432,8 @@
     },
     {
       "atomType": "Gcode",
-      "x": 0.918,
-      "y": 0.3429,
+      "x": 0.9303,
+      "y": 0.4171,
       "uniqueID": "id-1721",
       "ioValues": [
         {
@@ -1442,11 +1442,12 @@
         },
         {
           "name": "Tool Size",
-          "ioValue": 6.35
+          "ioValue": 0.2499
         },
         {
           "name": "Passes",
-          "ioValue": 1
+          "ioValue": 1,
+          "currentEquation": "1"
         },
         {
           "name": "Speed",
@@ -1464,6 +1465,40 @@
       ],
       "partName": "CustomSlicer",
       "sortDirection": "Left"
+    },
+    {
+      "atomType": "Export",
+      "x": 0.9023,
+      "y": 0.1429,
+      "uniqueID": "id-1728",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "File Type",
+          "ioValue": "STEP",
+          "currentEquation": "STEP"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "STL Tolerance",
+          "ioValue": 0.05
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "CustomSlicer",
+          "currentEquation": "CustomSlicer"
+        }
+      ],
+      "type": null,
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "CustomSlicer"
     },
     {
       "atomType": "Output",
@@ -1694,8 +1729,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.8086,
-      "y": 0.8314,
+      "x": 0.7637,
+      "y": 0.8714,
       "uniqueID": "id-868",
       "ioValues": [
         {
@@ -1718,8 +1753,8 @@
     },
     {
       "atomType": "CutOrient",
-      "x": 0.8555,
-      "y": 0.5429,
+      "x": 0.8529,
+      "y": 0.5486,
       "uniqueID": "id-874",
       "name": "Cut Orient",
       "ioValues": [
@@ -3320,6 +3355,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-874",
       "ap2ID": "id-1721"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-874",
+      "ap2ID": "id-1728"
     },
     {
       "ap2Name": "shape",
