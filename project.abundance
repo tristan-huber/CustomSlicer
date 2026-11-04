@@ -1753,8 +1753,8 @@
     },
     {
       "atomType": "CutOrient",
-      "x": 0.8529,
-      "y": 0.5486,
+      "x": 0.8444,
+      "y": 0.56,
       "uniqueID": "id-874",
       "name": "Cut Orient",
       "ioValues": [
