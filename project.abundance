@@ -7,8 +7,7 @@
   "ioValues": [
     {
       "name": "slice_thickness",
-      "ioValue": 0.25,
-      "currentEquation": "0.25"
+      "ioValue": 0.25
     },
     {
       "name": "slice_spacing_on_center",
@@ -19,8 +18,8 @@
   "allAtoms": [
     {
       "atomType": "GitHubMolecule",
-      "x": 0.5521,
-      "y": 0.34,
+      "x": 0.4857,
+      "y": 0.2343,
       "uniqueID": "id-120",
       "name": "cross_section_xdir",
       "ioValues": [
@@ -30,8 +29,7 @@
         },
         {
           "name": "sliceThickness",
-          "ioValue": 0.25,
-          "currentEquation": "0.5"
+          "ioValue": 0.25
         },
         {
           "name": "slicePositions",
@@ -1177,15 +1175,14 @@
         },
         {
           "name": "z-axis degrees",
-          "ioValue": 90,
-          "currentEquation": "90"
+          "ioValue": 90
         }
       ]
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.5378,
-      "y": 0.6857,
+      "x": 0.4733,
+      "y": 0.8629,
       "uniqueID": "id-238",
       "name": "cross_section_xdir",
       "ioValues": [
@@ -2311,8 +2308,8 @@
     },
     {
       "atomType": "Rotate",
-      "x": 0.5247,
-      "y": 0.8857,
+      "x": 0.5768,
+      "y": 0.88,
       "uniqueID": "id-395",
       "ioValues": [
         {
@@ -2329,32 +2326,7 @@
         },
         {
           "name": "z-axis degrees",
-          "ioValue": -90,
-          "currentEquation": "-90"
-        }
-      ]
-    },
-    {
-      "atomType": "Assembly",
-      "x": 0.6497,
-      "y": 0.8429,
-      "uniqueID": "id-401",
-      "ioValues": [
-        {
-          "name": "makeDisjoint",
-          "ioValue": false
-        },
-        {
-          "name": "Shape 1",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "Shape2",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "Shape3",
-          "ioValue": "__GEOMETRY_INPUT__"
+          "ioValue": -90
         }
       ]
     },
@@ -2384,7 +2356,7 @@
     {
       "atomType": "Input",
       "x": 0.0231,
-      "y": 0.2257,
+      "y": 0.14,
       "uniqueID": "id-460",
       "name": "slice_thickness",
       "options": []
@@ -2392,7 +2364,7 @@
     {
       "atomType": "Input",
       "x": 0.0231,
-      "y": 0.3714,
+      "y": 0.3143,
       "uniqueID": "id-463",
       "name": "slice_spacing_on_center",
       "options": []
@@ -2517,8 +2489,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.3034,
-      "y": 0.6,
+      "x": 0.276,
+      "y": 0.9571,
       "uniqueID": "id-502",
       "name": "Width",
       "ioValues": [
@@ -2610,8 +2582,8 @@
     },
     {
       "atomType": "Code",
-      "x": 0.4043,
-      "y": 0.9229,
+      "x": 0.3704,
+      "y": 0.64,
       "uniqueID": "id-514",
       "ioValues": [
         {
@@ -2633,8 +2605,8 @@
     },
     {
       "atomType": "Equation",
-      "x": 0.373,
-      "y": 0.6686,
+      "x": 0.349,
+      "y": 0.9514,
       "uniqueID": "id-519",
       "name": "-1 * x",
       "ioValues": [
@@ -2653,8 +2625,7 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 15,
-          "currentEquation": "15"
+          "ioValue": 15
         },
         {
           "name": "y length",
@@ -2664,8 +2635,8 @@
     },
     {
       "atomType": "Intersection",
-      "x": 0.7253,
-      "y": 0.3914,
+      "x": 0.6549,
+      "y": 0.2943,
       "uniqueID": "id-540",
       "ioValues": [
         {
@@ -2698,15 +2669,14 @@
         },
         {
           "name": "zDist",
-          "ioValue": 10,
-          "currentEquation": "10"
+          "ioValue": 10
         }
       ]
     },
     {
       "atomType": "Rotate",
-      "x": 0.1087,
-      "y": 0.7229,
+      "x": 0.0911,
+      "y": 0.7486,
       "uniqueID": "id-62",
       "ioValues": [
         {
@@ -2723,8 +2693,7 @@
         },
         {
           "name": "z-axis degrees",
-          "ioValue": 45,
-          "currentEquation": "45"
+          "ioValue": 45
         }
       ]
     },
@@ -2768,18 +2737,219 @@
         }
       ],
       "closedSelection": 0
+    },
+    {
+      "atomType": "Code",
+      "x": 0.9023,
+      "y": 0.2286,
+      "uniqueID": "id-835",
+      "ioValues": [
+        {
+          "name": "shape",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "interpreterVersion": 1,
+      "code": "function run(shape: Assembly) {\n  return shape.onLeafs((leaf) => {\n    const [[xMin, yMin, zMin], [xMax, yMax, zMax]] = leaf.geometry.boundingBox.bounds;\n    const midZ = (zMin + zMax) / 2;\n    const pad = 1;\n    const keep = replicad.makeBox(\n      [xMin - pad, yMin - pad, zMin - pad],\n      [xMax + pad, yMax + pad, midZ]\n    );\n    leaf.geometry = leaf.geometry.intersect(keep);\n    return leaf;\n  });\n}",
+      "compiledCode": "\"use strict\";\nfunction run(shape) {\n    return shape.onLeafs((leaf) => {\n        const [[xMin, yMin, zMin], [xMax, yMax, zMax]] = leaf.geometry.boundingBox.bounds;\n        const midZ = (zMin + zMax) / 2;\n        const pad = 1;\n        const keep = replicad.makeBox([xMin - pad, yMin - pad, zMin - pad], [xMax + pad, yMax + pad, midZ]);\n        leaf.geometry = leaf.geometry.intersect(keep);\n        return leaf;\n    });\n}\n"
+    },
+    {
+      "atomType": "Code",
+      "x": 0.7865,
+      "y": 0.1771,
+      "uniqueID": "id-845",
+      "ioValues": [
+        {
+          "name": "shape",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "minVolume",
+          "ioValue": 0.0625,
+          "currentEquation": "slice_thickness * slice_thickness * slice_thickness * 4"
+        }
+      ],
+      "interpreterVersion": 1,
+      "code": "function run(shape: Assembly, minVolume: number = 1) {\n  return shape.onLeafs((leaf) => {\n    if (leaf.is3D() && replicad.measureVolume(leaf.geometry) >= minVolume) {\n      return leaf;\n    }\n    if (leaf.is2D() && replicad.measureArea(leaf.geometry) >= minVolume) {\n      return leaf;\n    }\n    return undefined;\n  });\n}",
+      "compiledCode": "\"use strict\";\nfunction run(shape, minVolume = 1) {\n    return shape.onLeafs((leaf) => {\n        if (leaf.is3D() && replicad.measureVolume(leaf.geometry) >= minVolume) {\n            return leaf;\n        }\n        if (leaf.is2D() && replicad.measureArea(leaf.geometry) >= minVolume) {\n            return leaf;\n        }\n        return undefined;\n    });\n}\n"
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.6966,
+      "y": 0.1314,
+      "uniqueID": "id-854",
+      "name": "ExplodeDisjoint",
+      "ioValues": [
+        {
+          "name": "ShapeToExplode",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-850",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Code",
+          "x": 0.3913,
+          "y": 0.5171,
+          "uniqueID": "id-851",
+          "ioValues": [
+            {
+              "name": "shape",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "interpreterVersion": 1,
+          "code": "\n// Example Code\nfunction run(shape: Assembly) {\n  const resultLeafs: Assembly[] = []\n  shape.onLeafs((leaf) => {\n    if (leaf.geometry instanceof replicad.Drawing) {\n      return leaf;\n    }\n    const splitGeoms = []\n    for (const foo of replicad.iterTopo(leaf.geometry.wrapped, \"solid\")) {\n      splitGeoms.push(foo)\n    }\n    console.log(`extracted ${splitGeoms.length} solids`)\n    console.log(replicad.cast(splitGeoms[0]))\n\n    for (let i = 0; i < splitGeoms.length; i++) {\n      resultLeafs.push(new Assembly({\n        ...leaf,\n        geometry: replicad.cast(splitGeoms[i])\n      }))\n    }\n    return leaf;\n  });\n  return resultLeafs;\n}",
+          "compiledCode": "\"use strict\";\n// Example Code\nfunction run(shape) {\n    const resultLeafs = [];\n    shape.onLeafs((leaf) => {\n        if (leaf.geometry instanceof replicad.Drawing) {\n            return leaf;\n        }\n        const splitGeoms = [];\n        for (const foo of replicad.iterTopo(leaf.geometry.wrapped, \"solid\")) {\n            splitGeoms.push(foo);\n        }\n        console.log(`extracted ${splitGeoms.length} solids`);\n        console.log(replicad.cast(splitGeoms[0]));\n        for (let i = 0; i < splitGeoms.length; i++) {\n            resultLeafs.push(new Assembly({\n                ...leaf,\n                geometry: replicad.cast(splitGeoms[i])\n            }));\n        }\n        return leaf;\n    });\n    return resultLeafs;\n}\n"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0231,
+          "y": 0.14,
+          "uniqueID": "id-852",
+          "name": "ShapeToExplode",
+          "type": "geometry",
+          "options": []
+        },
+        {
+          "atomType": "Readme",
+          "x": 0.2031,
+          "y": 0.6229,
+          "uniqueID": "id-853",
+          "name": "README",
+          "ioValues": [
+            {
+              "name": "value",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "readMeText": "Makes an assembly where each leaf is a disjoint (ie not touching) part from the input. Particularly useful for imported entities.",
+          "global": true
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-851",
+          "ap2ID": "id-850"
+        },
+        {
+          "ap2Name": "shape",
+          "ap1ID": "id-852",
+          "ap2ID": "id-851"
+        }
+      ],
+      "parentRepo": {
+        "contentURL": "https://raw.githubusercontent.com/tristan-huber/ExplodeDisjoint/master/project.abundance?sanitize=true",
+        "dateCreated": "2026-01-09T19:43:12Z",
+        "dateModified": "2026-07-10T16:19:55Z",
+        "description": "Explodes disjoint 3d shapes into an assembly.",
+        "forks": 0,
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/tristan-huber/ExplodeDisjoint",
+        "lastFoundGit": "2026-11-04T18:23:39.022Z",
+        "likes": 0,
+        "owner": "tristan-huber",
+        "pngURL": "https://raw.githubusercontent.com/tristan-huber/ExplodeDisjoint/master/project.png?sanitize=true",
+        "privateRepo": false,
+        "pullRequests": [],
+        "ranking": 2,
+        "readme": "https://raw.githubusercontent.com/tristan-huber/ExplodeDisjoint/master/README.md?sanitize=true",
+        "searchField": "explodedisjoint tristan-huber explodes disjoint 3d shapes into an assembly. abundance-tool",
+        "svgURL": "https://raw.githubusercontent.com/tristan-huber/ExplodeDisjoint/master/project.svg?sanitize=true",
+        "topMoleculeID": "",
+        "topics": [
+          "abundance-tool"
+        ],
+        "userRanking": 0,
+        "userSetAsThumbnail": false,
+        "yyyy": 2026,
+        "repoName": "ExplodeDisjoint",
+        "isLocal": false
+      },
+      "unitsKey": "Unitless",
+      "fileTypeVersion": 1,
+      "scaleToProjectUnits": true,
+      "lastReloadedFromGithubAt": 1793834410507
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.7865,
+      "y": 0.6486,
+      "uniqueID": "id-864",
+      "ioValues": [
+        {
+          "name": "retain",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "remove",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.8887,
+      "y": 0.8057,
+      "uniqueID": "id-868",
+      "ioValues": [
+        {
+          "name": "makeDisjoint",
+          "ioValue": true
+        },
+        {
+          "name": "Shape 1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Shape2",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Shape3",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "CutOrient",
+      "x": 0.6803,
+      "y": 0.7143,
+      "uniqueID": "id-874",
+      "name": "Cut Orient",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "orientations": [],
+      "orientationsForHashed": null
     }
   ],
   "allConnectors": [
     {
-      "ap2Name": "Shape 1",
-      "ap1ID": "id-120",
-      "ap2ID": "id-401"
-    },
-    {
       "ap2Name": "geometry1",
       "ap1ID": "id-120",
       "ap2ID": "id-540"
+    },
+    {
+      "ap2Name": "retain",
+      "ap1ID": "id-120",
+      "ap2ID": "id-864"
     },
     {
       "ap2Name": "profileShape",
@@ -2797,14 +2967,14 @@
       "ap2ID": "id-395"
     },
     {
-      "ap2Name": "Shape2",
-      "ap1ID": "id-395",
-      "ap2ID": "id-401"
-    },
-    {
       "ap2Name": "geometry2",
       "ap1ID": "id-395",
       "ap2ID": "id-540"
+    },
+    {
+      "ap2Name": "Shape2",
+      "ap1ID": "id-395",
+      "ap2ID": "id-868"
     },
     {
       "ap2Name": "slicePositions",
@@ -2835,6 +3005,11 @@
       "ap2Name": "profileShape",
       "ap1ID": "id-479",
       "ap2ID": "id-120"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-479",
+      "ap2ID": "id-2"
     },
     {
       "ap2Name": "geometry",
@@ -2877,6 +3052,11 @@
       "ap2ID": "id-68"
     },
     {
+      "ap2Name": "ShapeToExplode",
+      "ap1ID": "id-540",
+      "ap2ID": "id-854"
+    },
+    {
       "ap2Name": "geometry",
       "ap1ID": "id-56",
       "ap2ID": "id-62"
@@ -2887,14 +3067,29 @@
       "ap2ID": "id-68"
     },
     {
-      "ap2Name": "number or geometry",
-      "ap1ID": "id-68",
-      "ap2ID": "id-2"
-    },
-    {
       "ap2Name": "shape",
       "ap1ID": "id-68",
       "ap2ID": "id-479"
+    },
+    {
+      "ap2Name": "remove",
+      "ap1ID": "id-835",
+      "ap2ID": "id-864"
+    },
+    {
+      "ap2Name": "shape",
+      "ap1ID": "id-845",
+      "ap2ID": "id-835"
+    },
+    {
+      "ap2Name": "shape",
+      "ap1ID": "id-854",
+      "ap2ID": "id-845"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-864",
+      "ap2ID": "id-868"
     }
   ],
   "unitsKey": "MM",
