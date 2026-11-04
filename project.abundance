@@ -1184,8 +1184,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.446,
-      "y": 0.7657,
+      "x": 0.5378,
+      "y": 0.6857,
       "uniqueID": "id-238",
       "name": "cross_section_xdir",
       "ioValues": [
@@ -2610,8 +2610,8 @@
     },
     {
       "atomType": "Code",
-      "x": 0.3783,
-      "y": 0.6029,
+      "x": 0.4043,
+      "y": 0.9229,
       "uniqueID": "id-514",
       "ioValues": [
         {
@@ -2633,8 +2633,8 @@
     },
     {
       "atomType": "Equation",
-      "x": 0.2923,
-      "y": 0.9343,
+      "x": 0.373,
+      "y": 0.6686,
       "uniqueID": "id-519",
       "name": "-1 * x",
       "ioValues": [
@@ -2663,131 +2663,20 @@
       ]
     },
     {
-      "atomType": "GitHubMolecule",
-      "x": 0.681,
-      "y": 0.2429,
-      "uniqueID": "id-528",
-      "name": "HalfLap",
+      "atomType": "Intersection",
+      "x": 0.7253,
+      "y": 0.3914,
+      "uniqueID": "id-540",
       "ioValues": [
         {
-          "name": "Assembly2",
+          "name": "geometry1",
           "ioValue": "__GEOMETRY_INPUT__"
         },
         {
-          "name": "Assembly1",
+          "name": "geometry2",
           "ioValue": "__GEOMETRY_INPUT__"
         }
-      ],
-      "topLevel": false,
-      "allAtoms": [
-        {
-          "atomType": "Output",
-          "x": 1,
-          "y": 0.5,
-          "uniqueID": "id-524",
-          "ioValues": [
-            {
-              "name": "number or geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ]
-        },
-        {
-          "atomType": "Input",
-          "x": 0.0231,
-          "y": 0.14,
-          "uniqueID": "id-525",
-          "name": "Assembly2",
-          "type": "geometry",
-          "options": []
-        },
-        {
-          "atomType": "Input",
-          "x": 0.0231,
-          "y": 0.224,
-          "uniqueID": "id-526",
-          "name": "Assembly1",
-          "type": "geometry",
-          "options": []
-        },
-        {
-          "atomType": "Code",
-          "x": 0.5,
-          "y": 0.4,
-          "uniqueID": "id-527",
-          "ioValues": [
-            {
-              "name": "shape1",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "shape2",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ],
-          "interpreterVersion": 1,
-          "code": "/**\n * Half lap: wherever a part of shape1 overlaps a part of shape2, the shared\n * volume is split in two. Each part loses the half that lies against its own\n * open edge, so the two notches slide together.\n *\n * The split direction is one where shape1 has no material on one side of the\n * overlap and shape2 has none on the other, which the parts need to go\n * together. When several directions work, the one with the most open sides\n * wins, then the thinnest cut.\n */\n\n// Overlaps smaller than this fraction of the shared volume count as empty\nconst EMPTY_FRACTION = 0.01;\n\nfunction volumeOf(shape: any): number {\n  try {\n    return replicad.measureVolume(shape);\n  } catch (error) {\n    return 0;\n  }\n}\n\nfunction overlapVolume(a: any, b: any): number {\n  try {\n    return volumeOf(a.clone().intersect(b.clone()));\n  } catch (error) {\n    return 0;\n  }\n}\n\nfunction moved(shape: any, axis: any, distance: number): any {\n  return shape.clone().translate([axis.x * distance, axis.y * distance, axis.z * distance]);\n}\n\n// Extent of a shape along an axis, from the end points of its edges\nfunction extentAlong(shape: any, axis: any): number {\n  let min = Infinity;\n  let max = -Infinity;\n  shape.edges.forEach((edge: any) => {\n    [edge.startPoint, edge.endPoint].forEach((point: any) => {\n      const d = point.dot(axis);\n      min = Math.min(min, d);\n      max = Math.max(max, d);\n    });\n  });\n  return max - min;\n}\n\n// Distinct directions normal to the planar faces of the shared volume\nfunction candidateAxes(shape: any): any[] {\n  const axes: any[] = [];\n  shape.faces.forEach((face: any) => {\n    if (face.geomType != \"PLANE\") {\n      return;\n    }\n    const normal = face.normalAt().normalized();\n    if (!axes.some((axis) => axis.cross(normal).Length < 1e-6)) {\n      axes.push(normal);\n    }\n  });\n  return axes;\n}\n\n// solid1 minus the half of its overlap with solid2 that sits against solid1's open side\nfunction halfLapCut(solid1: any, solid2: any): any {\n  let shared;\n  try {\n    shared = solid1.clone().intersect(solid2.clone());\n  } catch (error) {\n    return solid1;\n  }\n  const sharedVolume = volumeOf(shared);\n  if (sharedVolume <= 0) {\n    return solid1; // the parts don't overlap\n  }\n  const empty = sharedVolume * EMPTY_FRACTION;\n\n  let best: any = undefined;\n  for (const axis of candidateAxes(shared)) {\n    const length = extentAlong(shared, axis);\n    if (length <= 0) {\n      continue;\n    }\n    // Blocks the size of the shared volume, just past it on either side\n    const ahead = moved(shared, axis, length);\n    const behind = moved(shared, axis, -length);\n    const open1Ahead = overlapVolume(solid1, ahead) < empty;\n    const open1Behind = overlapVolume(solid1, behind) < empty;\n    const open2Ahead = overlapVolume(solid2, ahead) < empty;\n    const open2Behind = overlapVolume(solid2, behind) < empty;\n\n    // shape1 must be open on the side of the half it gives up, shape2 on the other\n    let sign = 0;\n    if (open1Ahead && open2Behind) {\n      sign = 1;\n    } else if (open1Behind && open2Ahead) {\n      sign = -1;\n    }\n    if (sign == 0) {\n      continue;\n    }\n\n    const openSides = [open1Ahead, open1Behind, open2Ahead, open2Behind].filter((x) => x).length;\n    if (\n      best == undefined ||\n      openSides > best.openSides ||\n      (openSides == best.openSides && length < best.length)\n    ) {\n      best = { axis, length, sign, openSides };\n    }\n  }\n\n  if (best == undefined) {\n    console.warn(\"No direction lets these parts slide together; shape2 takes the whole overlap here\");\n    return solid1;\n  }\n\n  // The half of the shared volume on shape1's open side\n  const half = shared.clone().intersect(moved(shared, best.axis, (best.sign * best.length) / 2));\n  return solid1.clone().cut(half);\n}\n\nfunction run(shape1: Assembly, shape2: Assembly): Assembly {\n  if (!shape1 || !shape2) {\n    throw new Error(\"Connect a part to both shape1 and shape2\");\n  }\n  const parts2 = shape2.filterLeafs((leaf) => !leaf.is2D());\n\n  // Notch every part of shape1 against every part of shape2\n  const notched1 = shape1.onLeafs((leaf) => {\n    if (leaf.is2D()) {\n      return leaf;\n    }\n    let solid = leaf.geometry;\n    for (const part2 of parts2) {\n      solid = halfLapCut(solid, part2.geometry);\n    }\n    return new Assembly({ ...leaf, geometry: solid });\n  });\n  const parts1 = notched1.filterLeafs((leaf) => !leaf.is2D());\n\n  // shape2 gives up whatever still overlaps the notched shape1: the other half\n  const notched2 = shape2.onLeafs((leaf) => {\n    if (leaf.is2D()) {\n      return leaf;\n    }\n    let solid = leaf.geometry;\n    for (const part1 of parts1) {\n      if (overlapVolume(solid, part1.geometry) > 0) {\n        solid = solid.cut(part1.geometry.clone());\n      }\n    }\n    return new Assembly({ ...leaf, geometry: solid });\n  });\n\n  return new Assembly({ geometry: [notched1, notched2] });\n}\n",
-          "compiledCode": "\"use strict\";\n/**\n * Half lap: wherever a part of shape1 overlaps a part of shape2, the shared\n * volume is split in two. Each part loses the half that lies against its own\n * open edge, so the two notches slide together.\n *\n * The split direction is one where shape1 has no material on one side of the\n * overlap and shape2 has none on the other, which the parts need to go\n * together. When several directions work, the one with the most open sides\n * wins, then the thinnest cut.\n */\n// Overlaps smaller than this fraction of the shared volume count as empty\nconst EMPTY_FRACTION = 0.01;\nfunction volumeOf(shape) {\n    try {\n        return replicad.measureVolume(shape);\n    }\n    catch (error) {\n        return 0;\n    }\n}\nfunction overlapVolume(a, b) {\n    try {\n        return volumeOf(a.clone().intersect(b.clone()));\n    }\n    catch (error) {\n        return 0;\n    }\n}\nfunction moved(shape, axis, distance) {\n    return shape.clone().translate([axis.x * distance, axis.y * distance, axis.z * distance]);\n}\n// Extent of a shape along an axis, from the end points of its edges\nfunction extentAlong(shape, axis) {\n    let min = Infinity;\n    let max = -Infinity;\n    shape.edges.forEach((edge) => {\n        [edge.startPoint, edge.endPoint].forEach((point) => {\n            const d = point.dot(axis);\n            min = Math.min(min, d);\n            max = Math.max(max, d);\n        });\n    });\n    return max - min;\n}\n// Distinct directions normal to the planar faces of the shared volume\nfunction candidateAxes(shape) {\n    const axes = [];\n    shape.faces.forEach((face) => {\n        if (face.geomType != \"PLANE\") {\n            return;\n        }\n        const normal = face.normalAt().normalized();\n        if (!axes.some((axis) => axis.cross(normal).Length < 1e-6)) {\n            axes.push(normal);\n        }\n    });\n    return axes;\n}\n// solid1 minus the half of its overlap with solid2 that sits against solid1's open side\nfunction halfLapCut(solid1, solid2) {\n    let shared;\n    try {\n        shared = solid1.clone().intersect(solid2.clone());\n    }\n    catch (error) {\n        return solid1;\n    }\n    const sharedVolume = volumeOf(shared);\n    if (sharedVolume <= 0) {\n        return solid1; // the parts don't overlap\n    }\n    const empty = sharedVolume * EMPTY_FRACTION;\n    let best = undefined;\n    for (const axis of candidateAxes(shared)) {\n        const length = extentAlong(shared, axis);\n        if (length <= 0) {\n            continue;\n        }\n        // Blocks the size of the shared volume, just past it on either side\n        const ahead = moved(shared, axis, length);\n        const behind = moved(shared, axis, -length);\n        const open1Ahead = overlapVolume(solid1, ahead) < empty;\n        const open1Behind = overlapVolume(solid1, behind) < empty;\n        const open2Ahead = overlapVolume(solid2, ahead) < empty;\n        const open2Behind = overlapVolume(solid2, behind) < empty;\n        // shape1 must be open on the side of the half it gives up, shape2 on the other\n        let sign = 0;\n        if (open1Ahead && open2Behind) {\n            sign = 1;\n        }\n        else if (open1Behind && open2Ahead) {\n            sign = -1;\n        }\n        if (sign == 0) {\n            continue;\n        }\n        const openSides = [open1Ahead, open1Behind, open2Ahead, open2Behind].filter((x) => x).length;\n        if (best == undefined ||\n            openSides > best.openSides ||\n            (openSides == best.openSides && length < best.length)) {\n            best = { axis, length, sign, openSides };\n        }\n    }\n    if (best == undefined) {\n        console.warn(\"No direction lets these parts slide together; shape2 takes the whole overlap here\");\n        return solid1;\n    }\n    // The half of the shared volume on shape1's open side\n    const half = shared.clone().intersect(moved(shared, best.axis, (best.sign * best.length) / 2));\n    return solid1.clone().cut(half);\n}\nfunction run(shape1, shape2) {\n    if (!shape1 || !shape2) {\n        throw new Error(\"Connect a part to both shape1 and shape2\");\n    }\n    const parts2 = shape2.filterLeafs((leaf) => !leaf.is2D());\n    // Notch every part of shape1 against every part of shape2\n    const notched1 = shape1.onLeafs((leaf) => {\n        if (leaf.is2D()) {\n            return leaf;\n        }\n        let solid = leaf.geometry;\n        for (const part2 of parts2) {\n            solid = halfLapCut(solid, part2.geometry);\n        }\n        return new Assembly({ ...leaf, geometry: solid });\n    });\n    const parts1 = notched1.filterLeafs((leaf) => !leaf.is2D());\n    // shape2 gives up whatever still overlaps the notched shape1: the other half\n    const notched2 = shape2.onLeafs((leaf) => {\n        if (leaf.is2D()) {\n            return leaf;\n        }\n        let solid = leaf.geometry;\n        for (const part1 of parts1) {\n            if (overlapVolume(solid, part1.geometry) > 0) {\n                solid = solid.cut(part1.geometry.clone());\n            }\n        }\n        return new Assembly({ ...leaf, geometry: solid });\n    });\n    return new Assembly({ geometry: [notched1, notched2] });\n}\n"
-        }
-      ],
-      "allConnectors": [
-        {
-          "ap2Name": "shape2",
-          "ap1ID": "id-525",
-          "ap2ID": "id-527"
-        },
-        {
-          "ap2Name": "shape1",
-          "ap1ID": "id-526",
-          "ap2ID": "id-527"
-        },
-        {
-          "ap2Name": "number or geometry",
-          "ap1ID": "id-527",
-          "ap2ID": "id-524"
-        }
-      ],
-      "parentRepo": {
-        "contentURL": "https://raw.githubusercontent.com/BarbourSmith/HalfLap/master/project.abundance?sanitize=true",
-        "dateCreated": "2025-06-24T17:18:36Z",
-        "dateModified": "739896",
-        "description": "Molecule to fix intersections into a half-lap joint style",
-        "forks": 0,
-        "githubMoleculesUsed": [],
-        "html_url": "https://github.com/BarbourSmith/HalfLap",
-        "lastFoundGit": "2026-11-04T18:23:39.022Z",
-        "likes": 0,
-        "owner": "BarbourSmith",
-        "parentRepo": "tristan-huber/HalfLap",
-        "pngURL": "https://raw.githubusercontent.com/BarbourSmith/HalfLap/master/project.png?sanitize=true",
-        "privateRepo": false,
-        "projectInputs": [
-          {
-            "name": "Assembly1",
-            "type": "geometry"
-          },
-          {
-            "type": "geometry",
-            "name": "Assembly2"
-          }
-        ],
-        "pullRequests": [],
-        "ranking": 2,
-        "readme": "https://raw.githubusercontent.com/BarbourSmith/HalfLap/master/README.md?sanitize=true",
-        "searchField": "halflap barboursmith molecule to fix intersections into a half-lap joint style ",
-        "svgURL": "https://raw.githubusercontent.com/BarbourSmith/HalfLap/master/project.svg?sanitize=true",
-        "topMoleculeID": "",
-        "topics": [],
-        "userRanking": 0,
-        "userSetAsThumbnail": false,
-        "yyyy": 2025,
-        "repoName": "HalfLap",
-        "isLocal": false
-      },
-      "unitsKey": "MM",
-      "fileTypeVersion": 1,
-      "scaleToProjectUnits": true,
-      "lastReloadedFromGithubAt": 1793833563010
+      ]
     },
     {
       "atomType": "Move",
@@ -2888,9 +2777,9 @@
       "ap2ID": "id-401"
     },
     {
-      "ap2Name": "Assembly2",
+      "ap2Name": "geometry1",
       "ap1ID": "id-120",
-      "ap2ID": "id-528"
+      "ap2ID": "id-540"
     },
     {
       "ap2Name": "profileShape",
@@ -2913,9 +2802,9 @@
       "ap2ID": "id-401"
     },
     {
-      "ap2Name": "Assembly1",
+      "ap2Name": "geometry2",
       "ap1ID": "id-395",
-      "ap2ID": "id-528"
+      "ap2ID": "id-540"
     },
     {
       "ap2Name": "slicePositions",
