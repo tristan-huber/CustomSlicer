@@ -15,8 +15,15 @@
     },
     {
       "name": "slice_spacing_on_center",
-      "ioValue": 2.6,
-      "currentEquation": "2.6"
+      "ioValue": 2.6
+    },
+    {
+      "name": "slices_x_axis",
+      "ioValue": 10
+    },
+    {
+      "name": "slices_y_axis",
+      "ioValue": 10
     }
   ],
   "topLevel": true,
@@ -37,11 +44,11 @@
           "ioValues": [
             {
               "name": "start",
-              "ioValue": 0.7750001000000006
+              "ioValue": 0.7750000000000004
             },
             {
               "name": "stop",
-              "ioValue": 7.0000002000000014
+              "ioValue": 7.000000000000001
             },
             {
               "name": "step",
@@ -55,8 +62,8 @@
         },
         {
           "atomType": "Input",
-          "x": 0.0231,
-          "y": 0.14,
+          "x": 0.0254,
+          "y": 0.1538,
           "uniqueID": "id-1307",
           "type": "number",
           "options": []
@@ -79,9 +86,9 @@
             {
               "name": "slicePositions",
               "ioValue": [
-                0.7750001000000006,
-                3.3750001000000007,
-                5.975000100000001
+                0.7750000000000004,
+                3.3750000000000004,
+                5.9750000000000005
               ]
             }
           ],
@@ -113,9 +120,9 @@
                 {
                   "name": "positions",
                   "ioValue": [
-                    0.7750001000000006,
-                    3.3750001000000007,
-                    5.975000100000001
+                    0.7750000000000004,
+                    3.3750000000000004,
+                    5.9750000000000005
                   ]
                 },
                 {
@@ -139,8 +146,8 @@
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.0231,
-                  "y": 0.14,
+                  "x": 0.0254,
+                  "y": 0.1538,
                   "uniqueID": "id-1312",
                   "name": "kayakbody",
                   "type": "geometry",
@@ -148,8 +155,8 @@
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.0231,
-                  "y": 0.224,
+                  "x": 0.0254,
+                  "y": 0.2462,
                   "uniqueID": "id-1313",
                   "name": "positions",
                   "type": "array",
@@ -163,11 +170,11 @@
                   "ioValues": [
                     {
                       "name": "x length",
-                      "ioValue": 2.0000002000000014
+                      "ioValue": 2.0000000000000013
                     },
                     {
                       "name": "y length",
-                      "ioValue": 10.000000400000001
+                      "ioValue": 10.000000000000002
                     }
                   ]
                 },
@@ -273,14 +280,14 @@
                       "ioValues": [
                         {
                           "name": "number or geometry",
-                          "ioValue": 5.000000200000001
+                          "ioValue": 5.000000000000001
                         }
                       ]
                     },
                     {
                       "atomType": "Input",
-                      "x": 0.0231,
-                      "y": 0.14,
+                      "x": 0.0254,
+                      "y": 0.1538,
                       "uniqueID": "id-1321",
                       "name": "Shape",
                       "type": "geometry",
@@ -387,14 +394,14 @@
                       "ioValues": [
                         {
                           "name": "number or geometry",
-                          "ioValue": 2.0000002000000014
+                          "ioValue": 2.0000000000000013
                         }
                       ]
                     },
                     {
                       "atomType": "Input",
-                      "x": 0.0231,
-                      "y": 0.14,
+                      "x": 0.0254,
+                      "y": 0.1538,
                       "uniqueID": "id-1326",
                       "name": "Shape",
                       "type": "geometry",
@@ -472,8 +479,8 @@
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.0231,
-                  "y": 0.308,
+                  "x": 0.0254,
+                  "y": 0.3385,
                   "uniqueID": "id-1329",
                   "name": "thickness",
                   "options": []
@@ -510,8 +517,8 @@
                     },
                     {
                       "atomType": "Input",
-                      "x": 0.0231,
-                      "y": 0.14,
+                      "x": 0.0254,
+                      "y": 0.1538,
                       "uniqueID": "id-1332",
                       "name": "B",
                       "type": "geometry",
@@ -519,8 +526,8 @@
                     },
                     {
                       "atomType": "Input",
-                      "x": 0.0231,
-                      "y": 0.224,
+                      "x": 0.0254,
+                      "y": 0.2462,
                       "uniqueID": "id-1333",
                       "name": "A",
                       "type": "geometry",
@@ -677,8 +684,8 @@
                     },
                     {
                       "atomType": "Input",
-                      "x": 0.0231,
-                      "y": 0.14,
+                      "x": 0.0254,
+                      "y": 0.1538,
                       "uniqueID": "id-1340",
                       "name": "A",
                       "type": "geometry",
@@ -686,8 +693,8 @@
                     },
                     {
                       "atomType": "Input",
-                      "x": 0.0231,
-                      "y": 0.224,
+                      "x": 0.0254,
+                      "y": 0.2462,
                       "uniqueID": "id-1341",
                       "name": "B",
                       "type": "geometry",
@@ -785,9 +792,9 @@
                     {
                       "name": "offsets",
                       "ioValue": [
-                        0.7750001000000006,
-                        3.3750001000000007,
-                        5.975000100000001
+                        0.7750000000000004,
+                        3.3750000000000004,
+                        5.9750000000000005
                       ]
                     },
                     {
@@ -815,8 +822,8 @@
                     },
                     {
                       "atomType": "Input",
-                      "x": 0.0231,
-                      "y": 0.14,
+                      "x": 0.0254,
+                      "y": 0.1538,
                       "uniqueID": "id-1346",
                       "name": "toMove",
                       "type": "geometry",
@@ -824,8 +831,8 @@
                     },
                     {
                       "atomType": "Input",
-                      "x": 0.0231,
-                      "y": 0.224,
+                      "x": 0.0254,
+                      "y": 0.2462,
                       "uniqueID": "id-1347",
                       "name": "offsets",
                       "type": "array",
@@ -833,8 +840,8 @@
                     },
                     {
                       "atomType": "Input",
-                      "x": 0.0231,
-                      "y": 0.308,
+                      "x": 0.0254,
+                      "y": 0.3385,
                       "uniqueID": "id-1348",
                       "name": "direction",
                       "type": "point3d",
@@ -854,9 +861,9 @@
                         {
                           "name": "offsets",
                           "ioValue": [
-                            0.7750001000000006,
-                            3.3750001000000007,
-                            5.975000100000001
+                            0.7750000000000004,
+                            3.3750000000000004,
+                            5.9750000000000005
                           ]
                         },
                         {
@@ -934,7 +941,7 @@
                   "ioValues": [
                     {
                       "name": "x",
-                      "ioValue": 5.000000200000001
+                      "ioValue": 5.000000000000001
                     }
                   ],
                   "currentEquation": "x * 2"
@@ -1051,8 +1058,8 @@
             },
             {
               "atomType": "Input",
-              "x": 0.0231,
-              "y": 0.14,
+              "x": 0.0254,
+              "y": 0.1538,
               "uniqueID": "id-1351",
               "name": "profileShape",
               "type": "geometry",
@@ -1060,16 +1067,16 @@
             },
             {
               "atomType": "Input",
-              "x": 0.0231,
-              "y": 0.224,
+              "x": 0.0254,
+              "y": 0.2462,
               "uniqueID": "id-1352",
               "name": "sliceThickness",
               "options": []
             },
             {
               "atomType": "Input",
-              "x": 0.0231,
-              "y": 0.308,
+              "x": 0.0254,
+              "y": 0.3385,
               "uniqueID": "id-1353",
               "name": "slicePositions",
               "type": "array",
@@ -1173,7 +1180,7 @@
           "ioValues": [
             {
               "name": "width",
-              "ioValue": 7.0000002000000014
+              "ioValue": 7.000000000000001
             },
             {
               "name": "spacing",
@@ -1222,14 +1229,14 @@
               "ioValues": [
                 {
                   "name": "number or geometry",
-                  "ioValue": 7.0000002000000014
+                  "ioValue": 7.000000000000001
                 }
               ]
             },
             {
               "atomType": "Input",
-              "x": 0.0231,
-              "y": 0.14,
+              "x": 0.0254,
+              "y": 0.1538,
               "uniqueID": "id-1358",
               "name": "Shape",
               "type": "geometry",
@@ -1345,7 +1352,7 @@
         },
         {
           "name": "xDist",
-          "ioValue": 7.000000200000001
+          "ioValue": 7.000000000000001
         },
         {
           "name": "yDist",
@@ -1369,7 +1376,7 @@
         },
         {
           "name": "xDist",
-          "ioValue": -7.000000200000001
+          "ioValue": -7.000000000000001
         },
         {
           "name": "yDist",
@@ -1390,7 +1397,7 @@
       "ioValues": [
         {
           "name": "x",
-          "ioValue": 7.000000200000001
+          "ioValue": 7.000000000000001
         }
       ],
       "currentEquation": "-1 * x"
@@ -1490,17 +1497,17 @@
     },
     {
       "atomType": "Input",
-      "x": 0.0231,
-      "y": 0.2029,
+      "x": 0.0254,
+      "y": 0.1657,
       "uniqueID": "id-1734",
       "name": "ShapeToSlice",
       "type": "import",
       "options": [],
-      "fileName": "ExampleToSlice.step",
-      "fileSha": null,
-      "fileType": "STEP",
-      "repoOwner": null,
-      "repoName": null,
+      "fileName": "ExampleToSlice.stl",
+      "fileSha": "9c8ee62cb2cc5a6e6f747c38c167c4afe101b9e9",
+      "fileType": "STL",
+      "repoOwner": "tristan-huber",
+      "repoName": "CustomSlicer",
       "SVGwidth": 10
     },
     {
@@ -1514,6 +1521,1122 @@
           "ioValue": "__GEOMETRY_INPUT__"
         }
       ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.44,
+      "uniqueID": "id-2080",
+      "name": "slices_x_axis",
+      "type": "array",
+      "options": [
+        "1",
+        "2.5",
+        "4"
+      ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.5657,
+      "uniqueID": "id-2083",
+      "name": "slices_y_axis",
+      "type": "array",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.2904,
+      "y": 0.1371,
+      "uniqueID": "id-2132",
+      "name": "cross_section_xdir",
+      "ioValues": [
+        {
+          "name": "profileShape",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "sliceThickness",
+          "ioValue": 0.25
+        },
+        {
+          "name": "slicePositions",
+          "ioValue": 10
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 1,
+          "y": 0.5,
+          "uniqueID": "id-2087",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Molecule",
+          "x": 0.7,
+          "y": 0.3,
+          "uniqueID": "id-2088",
+          "name": "cross-sections",
+          "ioValues": [
+            {
+              "name": "kayakbody",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "positions",
+              "ioValue": 10
+            },
+            {
+              "name": "thickness",
+              "ioValue": 0.25
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 1,
+              "y": 0.5,
+              "uniqueID": "id-2089",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.1538,
+              "uniqueID": "id-2090",
+              "name": "kayakbody",
+              "type": "geometry",
+              "options": []
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.2462,
+              "uniqueID": "id-2091",
+              "name": "positions",
+              "type": "array",
+              "options": []
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.2,
+              "y": 0.7,
+              "uniqueID": "id-2092",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 2.0000000000000013
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 14.000000000000002
+                }
+              ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.3,
+              "y": 0.8,
+              "uniqueID": "id-2093",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 0.25
+                }
+              ]
+            },
+            {
+              "atomType": "Rotate",
+              "x": 0.4,
+              "y": 0.9,
+              "uniqueID": "id-2094",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "x-axis degrees",
+                  "ioValue": 0
+                },
+                {
+                  "name": "y-axis degrees",
+                  "ioValue": 90
+                },
+                {
+                  "name": "z-axis degrees",
+                  "ioValue": 0
+                }
+              ]
+            },
+            {
+              "atomType": "Intersection",
+              "x": 0.7,
+              "y": 0.3,
+              "uniqueID": "id-2095",
+              "ioValues": [
+                {
+                  "name": "geometry1",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "geometry2",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Rotate",
+              "x": 0.1,
+              "y": 0.7,
+              "uniqueID": "id-2096",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "x-axis degrees",
+                  "ioValue": 0
+                },
+                {
+                  "name": "y-axis degrees",
+                  "ioValue": 0
+                },
+                {
+                  "name": "z-axis degrees",
+                  "ioValue": 90
+                }
+              ]
+            },
+            {
+              "atomType": "GitHubMolecule",
+              "x": 0.2,
+              "y": 0.5,
+              "uniqueID": "id-2097",
+              "name": "Width",
+              "ioValues": [
+                {
+                  "name": "Shape",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "topLevel": false,
+              "allAtoms": [
+                {
+                  "atomType": "Output",
+                  "x": 1,
+                  "y": 0.5,
+                  "uniqueID": "id-2098",
+                  "ioValues": [
+                    {
+                      "name": "number or geometry",
+                      "ioValue": 7.000000000000001
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0254,
+                  "y": 0.1538,
+                  "uniqueID": "id-2099",
+                  "name": "Shape",
+                  "type": "geometry",
+                  "options": []
+                },
+                {
+                  "atomType": "Code",
+                  "x": 0.4,
+                  "y": 0.5,
+                  "uniqueID": "id-2100",
+                  "ioValues": [
+                    {
+                      "name": "A",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ],
+                  "interpreterVersion": 0,
+                  "code": "/**\n Inputs for this Code Atom:\n - Takes a single geometry input \"A\" and returns its width (X size) as measured by the bounding box.\n*/\nInputs = [\n  { inputName: \"A\", type: \"geometry\", defaultValue: null }\n]\n\nif (!A) {\n  // No input provided — return null to indicate absence.\n  return null\n}\n\n// Get bounding box of A. boundsA.min and boundsA.max are arrays [x, y, z]\nlet boundsA = await GetBounds(A);\nlet min = boundsA.min;\nlet max = boundsA.max;\n\n// Compute width along X (maxX - minX)\nlet width = max[0] - min[0];\n\n// Ensure a non-negative numeric result\nwidth = typeof width === 'number' && isFinite(width) ? Math.max(0, width) : null;\n\nreturn width;"
+                }
+              ],
+              "allConnectors": [
+                {
+                  "ap2Name": "A",
+                  "ap1ID": "id-2099",
+                  "ap2ID": "id-2100"
+                },
+                {
+                  "ap2Name": "number or geometry",
+                  "ap1ID": "id-2100",
+                  "ap2ID": "id-2098"
+                }
+              ],
+              "parentRepo": {
+                "lastFoundGit": "2026-08-12T10:23:38.987Z",
+                "privateRepo": false,
+                "repoName": "Width",
+                "dateCreated": "2025-12-04T20:14:11Z",
+                "likes": 0,
+                "readMe": "https://raw.githubusercontent.com/BarbourSmith/Width/master/README.md?sanitize=true",
+                "yyyy": 2025,
+                "topMoleculeID": "id-386",
+                "githubMoleculesUsed": [],
+                "html_url": "https://github.com/BarbourSmith/Width",
+                "topics": [],
+                "pullRequests": [],
+                "parentRepo": null,
+                "forks": 0,
+                "dateModified": "739589",
+                "ranking": 6,
+                "searchField": "width barboursmith takes a shape and returns the width as measured by the shapes bounding box in the x direction ",
+                "owner": "BarbourSmith",
+                "description": "Takes a shape and returns the width as measured by the shapes bounding box in the X direction",
+                "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Width/master/project.abundance?sanitize=true",
+                "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Width/master/project.svg?sanitize=true",
+                "isLocal": false
+              },
+              "unitsKey": "MM",
+              "fileTypeVersion": 1,
+              "lastReloadedFromGithubAt": 1786556314894
+            },
+            {
+              "atomType": "Rotate",
+              "x": 0.1,
+              "y": 0.9,
+              "uniqueID": "id-2101",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "x-axis degrees",
+                  "ioValue": 90
+                },
+                {
+                  "name": "y-axis degrees",
+                  "ioValue": 0
+                },
+                {
+                  "name": "z-axis degrees",
+                  "ioValue": 90
+                }
+              ]
+            },
+            {
+              "atomType": "GitHubMolecule",
+              "x": 0.1,
+              "y": 0.9,
+              "uniqueID": "id-2102",
+              "name": "Width",
+              "ioValues": [
+                {
+                  "name": "Shape",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "topLevel": false,
+              "allAtoms": [
+                {
+                  "atomType": "Output",
+                  "x": 1,
+                  "y": 0.5,
+                  "uniqueID": "id-2103",
+                  "ioValues": [
+                    {
+                      "name": "number or geometry",
+                      "ioValue": 2.0000000000000013
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0254,
+                  "y": 0.1538,
+                  "uniqueID": "id-2104",
+                  "name": "Shape",
+                  "type": "geometry",
+                  "options": []
+                },
+                {
+                  "atomType": "Code",
+                  "x": 0.4,
+                  "y": 0.5,
+                  "uniqueID": "id-2105",
+                  "ioValues": [
+                    {
+                      "name": "A",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ],
+                  "interpreterVersion": 0,
+                  "code": "/**\n Inputs for this Code Atom:\n - Takes a single geometry input \"A\" and returns its width (X size) as measured by the bounding box.\n*/\nInputs = [\n  { inputName: \"A\", type: \"geometry\", defaultValue: null }\n]\n\nif (!A) {\n  // No input provided — return null to indicate absence.\n  return null\n}\n\n// Get bounding box of A. boundsA.min and boundsA.max are arrays [x, y, z]\nlet boundsA = await GetBounds(A);\nlet min = boundsA.min;\nlet max = boundsA.max;\n\n// Compute width along X (maxX - minX)\nlet width = max[0] - min[0];\n\n// Ensure a non-negative numeric result\nwidth = typeof width === 'number' && isFinite(width) ? Math.max(0, width) : null;\n\nreturn width;"
+                }
+              ],
+              "allConnectors": [
+                {
+                  "ap2Name": "A",
+                  "ap1ID": "id-2104",
+                  "ap2ID": "id-2105"
+                },
+                {
+                  "ap2Name": "number or geometry",
+                  "ap1ID": "id-2105",
+                  "ap2ID": "id-2103"
+                }
+              ],
+              "parentRepo": {
+                "lastFoundGit": "2026-08-12T10:23:38.987Z",
+                "privateRepo": false,
+                "repoName": "Width",
+                "dateCreated": "2025-12-04T20:14:11Z",
+                "likes": 0,
+                "readMe": "https://raw.githubusercontent.com/BarbourSmith/Width/master/README.md?sanitize=true",
+                "yyyy": 2025,
+                "topMoleculeID": "id-386",
+                "githubMoleculesUsed": [],
+                "html_url": "https://github.com/BarbourSmith/Width",
+                "topics": [],
+                "pullRequests": [],
+                "parentRepo": null,
+                "forks": 0,
+                "dateModified": "739589",
+                "ranking": 6,
+                "searchField": "width barboursmith takes a shape and returns the width as measured by the shapes bounding box in the x direction ",
+                "owner": "BarbourSmith",
+                "description": "Takes a shape and returns the width as measured by the shapes bounding box in the X direction",
+                "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Width/master/project.abundance?sanitize=true",
+                "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Width/master/project.svg?sanitize=true",
+                "isLocal": false
+              },
+              "unitsKey": "MM",
+              "fileTypeVersion": 1,
+              "lastReloadedFromGithubAt": 1786556314894
+            },
+            {
+              "atomType": "Readme",
+              "x": 0.7,
+              "y": 0.6,
+              "uniqueID": "id-2106",
+              "name": "README",
+              "ioValues": [
+                {
+                  "name": "value",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "readMeText": "Readme text here",
+              "global": true
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.3385,
+              "uniqueID": "id-2107",
+              "name": "thickness",
+              "options": []
+            },
+            {
+              "atomType": "GitHubMolecule",
+              "x": 0.4,
+              "y": 0.5,
+              "uniqueID": "id-2108",
+              "name": "Above",
+              "ioValues": [
+                {
+                  "name": "B",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "A",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "topLevel": false,
+              "allAtoms": [
+                {
+                  "atomType": "Output",
+                  "x": 1,
+                  "y": 0.5,
+                  "uniqueID": "id-2109",
+                  "ioValues": [
+                    {
+                      "name": "number or geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0254,
+                  "y": 0.1538,
+                  "uniqueID": "id-2110",
+                  "name": "B",
+                  "type": "geometry",
+                  "options": []
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0254,
+                  "y": 0.2462,
+                  "uniqueID": "id-2111",
+                  "name": "A",
+                  "type": "geometry",
+                  "options": []
+                },
+                {
+                  "atomType": "Code",
+                  "x": 0.4,
+                  "y": 0.5,
+                  "uniqueID": "id-2112",
+                  "ioValues": [
+                    {
+                      "name": "A",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "B",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ],
+                  "interpreterVersion": 0,
+                  "code": "\n      Inputs = [\n       {inputName: \"A\", type: \"geometry\", defaultValue: null},\n        {inputName: \"B\", type: \"geometry\", defaultValue: null}\n      ]\n      //This defines the molecules inputs and creates variables with the same names which can be referenced in the code\n\n      let boundsA = await GetBounds(A);\n      let A_minZ = boundsA.min[2];\n\n      let B_maxZ = 0;\n      if(B){\n          let boundsB = await GetBounds(B);\n          console.log(\"Bounding Box B:  \");\n          console.log(boundsB);\n          B_maxZ  = boundsB.max[2];\n      }\n\n     let translationZ = B_maxZ - A_minZ;\n     \n      let movedOutput = await Move(A, 0, 0, translationZ);\n\n      return movedOutput;\n\n      // //We can also create a new shape from scratch\n      // let createdRectangle = replicad.drawRectangle(5,7)\n      // //This is the plane we are going to put our new shape on\n      // const newPlane = new replicad.Plane().pivot(0, 'Y');\n      // //And we extrude the shape to make it 3D\n      // let createdShape = createdRectangle.sketchOnPlane(newPlane).extrude(height)\n\n      // //For our new geometry we need to define the tags, color, plane, etc\n      // let shape2 = {\n      //     geometry: [createdShape],\n      //     tags: [\"aTag\"],\n      //     color: '#A3CE5B',\n      //     plane: newPlane,\n      //     bom: []\n      // }\n\n      // //Then we can return our created shape in just the same way\n      // //return shape2\n\n      // //If we want to return both shapes at once, we can create an assembly with them\n      // let anAssembly = {\n      //   geometry: [shape1, shape2],\n      //   tags: [\"aNewTag\"],\n      //   color: '#A3CF5B',\n      //   plane: newPlane,\n      //   bom: []\n      // }\n\n      // //And we can return that in the same way\n      // return anAssembly\n\n      /**\n      To Use the Code Atom, enter your inputs to the input list as an object array:\n      Inputs = [\n        {inputName: \"shape\", type: \"geometry\", defaultValue: null},\n        {inputName: \"dist\", type: \"number\", defaultValue: 5},\n        {inputName: \"height\", type: \"number\", defaultValue: 10}\n      ]\n      If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0]\n      Use any replicad available methods to modify your geometry. Learn more about all of the available methods at\n      https://replicad.xyz/docs/introapp/UserGuide.html\n      Return a replicad object that includes geometry, color, tags and plane.\n\n      Example Code Atom:\n        Inputs = [\n          {inputName: \"shape\", type: \"geometry\", defaultValue: null},\n          {inputName: \"x\", type: \"number\", defaultValue: 5}\n        ]\n        let finalShape = library[shape].geometry[0].clone().translate([x,0,0])\n        return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n      */\n      "
+                },
+                {
+                  "atomType": "Rectangle",
+                  "x": 0.2,
+                  "y": 0.8,
+                  "uniqueID": "id-2113",
+                  "ioValues": [
+                    {
+                      "name": "x length",
+                      "ioValue": 10
+                    },
+                    {
+                      "name": "y length",
+                      "ioValue": 10
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Extrude",
+                  "x": 0.3,
+                  "y": 0.8,
+                  "uniqueID": "id-2114",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "height",
+                      "ioValue": 9
+                    }
+                  ]
+                }
+              ],
+              "allConnectors": [
+                {
+                  "ap2Name": "B",
+                  "ap1ID": "id-2110",
+                  "ap2ID": "id-2112"
+                },
+                {
+                  "ap2Name": "A",
+                  "ap1ID": "id-2111",
+                  "ap2ID": "id-2112"
+                },
+                {
+                  "ap2Name": "number or geometry",
+                  "ap1ID": "id-2112",
+                  "ap2ID": "id-2109"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-2113",
+                  "ap2ID": "id-2114"
+                }
+              ],
+              "parentRepo": {
+                "lastFoundGit": "2026-08-12T10:23:38.987Z",
+                "privateRepo": false,
+                "repoName": "Above",
+                "dateCreated": "2025-09-22T22:39:35Z",
+                "likes": 0,
+                "readMe": "https://raw.githubusercontent.com/BarbourSmith/Above/master/README.md?sanitize=true",
+                "yyyy": 2025,
+                "topMoleculeID": "decd9514-fa8b-49ad-b680-2aaf10b00d00",
+                "githubMoleculesUsed": [],
+                "html_url": "https://github.com/BarbourSmith/Above",
+                "topics": [],
+                "pullRequests": [],
+                "parentRepo": null,
+                "forks": 0,
+                "dateModified": "739604",
+                "ranking": 7.5,
+                "searchField": "above barboursmith takes two inputs and moves input a in the z-axis direction so that it ends up above b as defined by their bounding boxes ",
+                "owner": "BarbourSmith",
+                "description": "Takes two inputs and moves input A in the Z-axis direction so that it ends up Above B as defined by their bounding boxes",
+                "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Above/master/project.abundance?sanitize=true",
+                "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Above/master/project.svg?sanitize=true",
+                "isLocal": false
+              },
+              "unitsKey": "MM",
+              "fileTypeVersion": 1,
+              "lastReloadedFromGithubAt": 1786556547048
+            },
+            {
+              "atomType": "GitHubMolecule",
+              "x": 0.5,
+              "y": 0.6,
+              "uniqueID": "id-2115",
+              "name": "Below",
+              "ioValues": [
+                {
+                  "name": "A",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "B",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "topLevel": false,
+              "allAtoms": [
+                {
+                  "atomType": "Output",
+                  "x": 1,
+                  "y": 0.5,
+                  "uniqueID": "id-2116",
+                  "ioValues": [
+                    {
+                      "name": "number or geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Code",
+                  "x": 0.3,
+                  "y": 0.5,
+                  "uniqueID": "id-2117",
+                  "ioValues": [
+                    {
+                      "name": "A",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "B",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ],
+                  "interpreterVersion": 0,
+                  "code": "Inputs = [\n  { inputName: \"A\", type: \"geometry\", defaultValue: null },\n  { inputName: \"B\", type: \"geometry\", defaultValue: null }\n]\n\n// Get bounds of A\nlet boundsA = await GetBounds(A);\nlet A_maxZ = boundsA.max[2];\n\n// Get bounds of B\nlet B_minZ = 0;\nif (B) {\n  let boundsB = await GetBounds(B);\n  console.log(\"Bounding Box B:\");\n  console.log(boundsB);\n  B_minZ = boundsB.min[2];\n}\n\n// Move A so its top touches the bottom of B\nlet translationZ = B_minZ - A_maxZ;\n\nlet movedOutput = await Move(A, 0, 0, translationZ);\nreturn movedOutput;\n\n\n      // //We can also create a new shape from scratch\n      // let createdRectangle = replicad.drawRectangle(5,7)\n      // //This is the plane we are going to put our new shape on\n      // const newPlane = new replicad.Plane().pivot(0, 'Y');\n      // //And we extrude the shape to make it 3D\n      // let createdShape = createdRectangle.sketchOnPlane(newPlane).extrude(height)\n\n      // //For our new geometry we need to define the tags, color, plane, etc\n      // let shape2 = {\n      //     geometry: [createdShape],\n      //     tags: [\"aTag\"],\n      //     color: '#A3CE5B',\n      //     plane: newPlane,\n      //     bom: []\n      // }\n\n      // //Then we can return our created shape in just the same way\n      // //return shape2\n\n      // //If we want to return both shapes at once, we can create an assembly with them\n      // let anAssembly = {\n      //   geometry: [shape1, shape2],\n      //   tags: [\"aNewTag\"],\n      //   color: '#A3CF5B',\n      //   plane: newPlane,\n      //   bom: []\n      // }\n\n      // //And we can return that in the same way\n      // return anAssembly\n\n      /**\n      To Use the Code Atom, enter your inputs to the input list as an object array:\n      Inputs = [\n        {inputName: \"shape\", type: \"geometry\", defaultValue: null},\n        {inputName: \"dist\", type: \"number\", defaultValue: 5},\n        {inputName: \"height\", type: \"number\", defaultValue: 10}\n      ]\n      If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0]\n      Use any replicad available methods to modify your geometry. Learn more about all of the available methods at\n      https://replicad.xyz/docs/introapp/UserGuide.html\n      Return a replicad object that includes geometry, color, tags and plane.\n\n      Example Code Atom:\n        Inputs = [\n          {inputName: \"shape\", type: \"geometry\", defaultValue: null},\n          {inputName: \"x\", type: \"number\", defaultValue: 5}\n        ]\n        let finalShape = library[shape].geometry[0].clone().translate([x,0,0])\n        return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n      */\n      "
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0254,
+                  "y": 0.1538,
+                  "uniqueID": "id-2118",
+                  "name": "A",
+                  "type": "geometry",
+                  "options": []
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0254,
+                  "y": 0.2462,
+                  "uniqueID": "id-2119",
+                  "name": "B",
+                  "type": "geometry",
+                  "options": []
+                }
+              ],
+              "allConnectors": [
+                {
+                  "ap2Name": "number or geometry",
+                  "ap1ID": "id-2117",
+                  "ap2ID": "id-2116"
+                },
+                {
+                  "ap2Name": "A",
+                  "ap1ID": "id-2118",
+                  "ap2ID": "id-2117"
+                },
+                {
+                  "ap2Name": "B",
+                  "ap1ID": "id-2119",
+                  "ap2ID": "id-2117"
+                }
+              ],
+              "parentRepo": {
+                "lastFoundGit": "2026-08-12T10:23:38.987Z",
+                "privateRepo": false,
+                "repoName": "Below",
+                "dateCreated": "2026-01-09T23:20:47Z",
+                "likes": 0,
+                "readMe": "https://raw.githubusercontent.com/BarbourSmith/Below/master/README.md?sanitize=true",
+                "yyyy": 2026,
+                "topMoleculeID": "id-32",
+                "githubMoleculesUsed": [],
+                "html_url": "https://github.com/BarbourSmith/Below",
+                "topics": [],
+                "pullRequests": [],
+                "parentRepo": null,
+                "forks": 0,
+                "dateModified": "739625",
+                "ranking": 1.2,
+                "searchField": "below barboursmith moves shape a below shape b ",
+                "owner": "BarbourSmith",
+                "description": "Moves shape A below shape B",
+                "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Below/master/project.abundance?sanitize=true",
+                "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Below/master/project.svg?sanitize=true",
+                "isLocal": false
+              },
+              "unitsKey": "MM",
+              "fileTypeVersion": 1,
+              "lastReloadedFromGithubAt": 1786556555743
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.3,
+              "y": 0.5,
+              "uniqueID": "id-2120",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 10
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 10
+                }
+              ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.3,
+              "y": 0.6,
+              "uniqueID": "id-2121",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 10
+                }
+              ]
+            },
+            {
+              "atomType": "GitHubMolecule",
+              "x": 0.6,
+              "y": 0.8,
+              "uniqueID": "id-2122",
+              "name": "crv.PolyMove",
+              "ioValues": [
+                {
+                  "name": "toMove",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "offsets",
+                  "ioValue": 10
+                },
+                {
+                  "name": "direction",
+                  "ioValue": [
+                    1,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "topLevel": false,
+              "allAtoms": [
+                {
+                  "atomType": "Output",
+                  "x": 1,
+                  "y": 0.5,
+                  "uniqueID": "id-2123",
+                  "ioValues": [
+                    {
+                      "name": "number or geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0254,
+                  "y": 0.1538,
+                  "uniqueID": "id-2124",
+                  "name": "toMove",
+                  "type": "geometry",
+                  "options": []
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0254,
+                  "y": 0.2462,
+                  "uniqueID": "id-2125",
+                  "name": "offsets",
+                  "type": "array",
+                  "options": []
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0254,
+                  "y": 0.3385,
+                  "uniqueID": "id-2126",
+                  "name": "direction",
+                  "type": "point3d",
+                  "options": [],
+                  "pointValue": null
+                },
+                {
+                  "atomType": "Code",
+                  "x": 0.4,
+                  "y": 0.4,
+                  "uniqueID": "id-2127",
+                  "ioValues": [
+                    {
+                      "name": "toMove",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "offsets",
+                      "ioValue": 10
+                    },
+                    {
+                      "name": "direction",
+                      "ioValue": [
+                        1,
+                        0,
+                        0
+                      ]
+                    }
+                  ],
+                  "interpreterVersion": 1,
+                  "code": "\n/**\n * This code atom implements a simple linear layout funtion which repeats\n * shape count times in the positive X direction with offset space\n * between each. Works for either 2D or 3D shapes. Negative offset\n * and negative counts invert the direction.\n * \n * Notice that defaults are set for both count and offset.\n */\nfunction move(shape: Assembly, v: [number, number, number]): Assembly | null {\n  return shape.onLeafs((l: Assembly<LeafGeom>) => {\n    const mvd = l.is2D() ? l.geometry.translate([v[0], v[1]]) : l.geometry.clone().translate(v)\n    return new Assembly({ ...l, geometry: mvd })\n  })\n}\n\nfunction run(toMove: Assembly, offsets: number[], direction: number[]) {\n  if (!offsets.length || offsets.length == 0) {\n    throw new Error(\"Missing offsets list\")\n  }\n  offsets = offsets.map((n) => Number(n))\n  if (direction.length != 3) {\n    throw new Error(\"Direction needs to be an [x,y,z] vector. Was: \" + direction)\n  }\n  const vec = new replicad.Vector(direction as [number, number, number]).normalize()\n  let leafCount = 0;\n  toMove.onLeafs((l) => {\n    leafCount++;\n    return l;\n  })\n\n  if (leafCount == 1) {\n    console.log(\"moving single object n times\")\n    console.log(offsets)\n    const result: (Assembly | null)[] = []\n    offsets.forEach((magnitude) => {\n      result.push(move(toMove, vec.multiply(magnitude).toTuple()))\n    });\n    console.log(result.length)\n    console.log(result)\n    return result;\n  } else if (leafCount === offsets.length) {\n    console.log(\"moving batch of objects by independent amounts\")\n    let index = 0;\n    let result: Assembly<AnyGeom>[] = []\n    toMove.onLeafs((l: Assembly<LeafGeom>) => {\n      const v = vec.multiply(offsets[index]).toTuple()\n      console.log(v)\n      index += 1\n      const mvd = l.is2D() ? l.geometry.translate([v[0], v[1]]) : l.geometry.clone().translate(v)\n      const res = new Assembly({ ...l, geometry: mvd })\n      result.push(res)\n      return res;\n    })\n    return result;\n  } else {\n    throw new Error(\"Assembly needs to be singleton or match offsets length. Was: \" + leafCount + \" offsets len: \" + offsets.length)\n  }\n}\n",
+                  "compiledCode": "\"use strict\";\n/**\n * This code atom implements a simple linear layout funtion which repeats\n * shape count times in the positive X direction with offset space\n * between each. Works for either 2D or 3D shapes. Negative offset\n * and negative counts invert the direction.\n *\n * Notice that defaults are set for both count and offset.\n */\nfunction move(shape, v) {\n    return shape.onLeafs((l) => {\n        const mvd = l.is2D() ? l.geometry.translate([v[0], v[1]]) : l.geometry.clone().translate(v);\n        return new Assembly({ ...l, geometry: mvd });\n    });\n}\nfunction run(toMove, offsets, direction) {\n    if (!offsets.length || offsets.length == 0) {\n        throw new Error(\"Missing offsets list\");\n    }\n    offsets = offsets.map((n) => Number(n));\n    if (direction.length != 3) {\n        throw new Error(\"Direction needs to be an [x,y,z] vector. Was: \" + direction);\n    }\n    const vec = new replicad.Vector(direction).normalize();\n    let leafCount = 0;\n    toMove.onLeafs((l) => {\n        leafCount++;\n        return l;\n    });\n    if (leafCount == 1) {\n        console.log(\"moving single object n times\");\n        console.log(offsets);\n        const result = [];\n        offsets.forEach((magnitude) => {\n            result.push(move(toMove, vec.multiply(magnitude).toTuple()));\n        });\n        console.log(result.length);\n        console.log(result);\n        return result;\n    }\n    else if (leafCount === offsets.length) {\n        console.log(\"moving batch of objects by independent amounts\");\n        let index = 0;\n        let result = [];\n        toMove.onLeafs((l) => {\n            const v = vec.multiply(offsets[index]).toTuple();\n            console.log(v);\n            index += 1;\n            const mvd = l.is2D() ? l.geometry.translate([v[0], v[1]]) : l.geometry.clone().translate(v);\n            const res = new Assembly({ ...l, geometry: mvd });\n            result.push(res);\n            return res;\n        });\n        return result;\n    }\n    else {\n        throw new Error(\"Assembly needs to be singleton or match offsets length. Was: \" + leafCount + \" offsets len: \" + offsets.length);\n    }\n}\n"
+                }
+              ],
+              "allConnectors": [
+                {
+                  "ap2Name": "toMove",
+                  "ap1ID": "id-2124",
+                  "ap2ID": "id-2127"
+                },
+                {
+                  "ap2Name": "offsets",
+                  "ap1ID": "id-2125",
+                  "ap2ID": "id-2127"
+                },
+                {
+                  "ap2Name": "direction",
+                  "ap1ID": "id-2126",
+                  "ap2ID": "id-2127"
+                },
+                {
+                  "ap2Name": "number or geometry",
+                  "ap1ID": "id-2127",
+                  "ap2ID": "id-2123"
+                }
+              ],
+              "parentRepo": {
+                "lastFoundGit": "2026-09-03T18:23:39.027Z",
+                "privateRepo": false,
+                "repoName": "crv.PolyMove",
+                "dateCreated": "2026-05-08T22:28:49Z",
+                "likes": 0,
+                "readMe": "https://raw.githubusercontent.com/tristan-huber/crv.PolyMove/master/README.md?sanitize=true",
+                "yyyy": 2026,
+                "topMoleculeID": "id-23",
+                "githubMoleculesUsed": [],
+                "html_url": "https://github.com/tristan-huber/crv.PolyMove",
+                "topics": [
+                  "abundance-tool"
+                ],
+                "pullRequests": [],
+                "parentRepo": null,
+                "forks": 0,
+                "dateModified": "739862",
+                "ranking": 11.7,
+                "searchField": "crv.polymove tristan-huber move one thing n times and return an assembly of the results. or move n things by n different distances. default direction is x+ abundance-tool",
+                "owner": "tristan-huber",
+                "description": "Move one thing n times and return an assembly of the results. Or move n things by n different distances. Default direction is X+",
+                "contentURL": "https://raw.githubusercontent.com/tristan-huber/crv.PolyMove/master/project.abundance?sanitize=true",
+                "svgURL": "https://raw.githubusercontent.com/tristan-huber/crv.PolyMove/master/project.svg?sanitize=true",
+                "isLocal": false
+              },
+              "unitsKey": "Unitless",
+              "fileTypeVersion": 1,
+              "lastReloadedFromGithubAt": 1788472363448
+            },
+            {
+              "atomType": "Equation",
+              "x": 0.2,
+              "y": 0.6,
+              "uniqueID": "id-2128",
+              "name": "x * 2",
+              "ioValues": [
+                {
+                  "name": "x",
+                  "ioValue": 7.000000000000001
+                }
+              ],
+              "currentEquation": "x * 2"
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "geometry2",
+              "ap1ID": "id-2090",
+              "ap2ID": "id-2095"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-2090",
+              "ap2ID": "id-2096"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-2090",
+              "ap2ID": "id-2101"
+            },
+            {
+              "ap2Name": "B",
+              "ap1ID": "id-2090",
+              "ap2ID": "id-2108"
+            },
+            {
+              "ap2Name": "offsets",
+              "ap1ID": "id-2091",
+              "ap2ID": "id-2122"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-2092",
+              "ap2ID": "id-2093"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-2093",
+              "ap2ID": "id-2094"
+            },
+            {
+              "ap2Name": "A",
+              "ap1ID": "id-2094",
+              "ap2ID": "id-2115"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-2095",
+              "ap2ID": "id-2089"
+            },
+            {
+              "ap2Name": "value",
+              "ap1ID": "id-2095",
+              "ap2ID": "id-2106"
+            },
+            {
+              "ap2Name": "Shape",
+              "ap1ID": "id-2096",
+              "ap2ID": "id-2097"
+            },
+            {
+              "ap2Name": "x",
+              "ap1ID": "id-2097",
+              "ap2ID": "id-2128"
+            },
+            {
+              "ap2Name": "Shape",
+              "ap1ID": "id-2101",
+              "ap2ID": "id-2102"
+            },
+            {
+              "ap2Name": "x length",
+              "ap1ID": "id-2102",
+              "ap2ID": "id-2092"
+            },
+            {
+              "ap2Name": "height",
+              "ap1ID": "id-2107",
+              "ap2ID": "id-2093"
+            },
+            {
+              "ap2Name": "B",
+              "ap1ID": "id-2108",
+              "ap2ID": "id-2115"
+            },
+            {
+              "ap2Name": "toMove",
+              "ap1ID": "id-2115",
+              "ap2ID": "id-2122"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-2120",
+              "ap2ID": "id-2121"
+            },
+            {
+              "ap2Name": "A",
+              "ap1ID": "id-2121",
+              "ap2ID": "id-2108"
+            },
+            {
+              "ap2Name": "geometry1",
+              "ap1ID": "id-2122",
+              "ap2ID": "id-2095"
+            },
+            {
+              "ap2Name": "y length",
+              "ap1ID": "id-2128",
+              "ap2ID": "id-2092"
+            }
+          ],
+          "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0254,
+          "y": 0.1538,
+          "uniqueID": "id-2129",
+          "name": "profileShape",
+          "type": "geometry",
+          "options": []
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0254,
+          "y": 0.2462,
+          "uniqueID": "id-2130",
+          "name": "sliceThickness",
+          "options": []
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0254,
+          "y": 0.3385,
+          "uniqueID": "id-2131",
+          "name": "slicePositions",
+          "type": "array",
+          "options": []
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-2088",
+          "ap2ID": "id-2087"
+        },
+        {
+          "ap2Name": "kayakbody",
+          "ap1ID": "id-2129",
+          "ap2ID": "id-2088"
+        },
+        {
+          "ap2Name": "thickness",
+          "ap1ID": "id-2130",
+          "ap2ID": "id-2088"
+        },
+        {
+          "ap2Name": "positions",
+          "ap1ID": "id-2131",
+          "ap2ID": "id-2088"
+        }
+      ],
+      "parentRepo": {
+        "contentURL": "https://raw.githubusercontent.com/tristan-huber/cross_sections_xdir/master/project.abundance?sanitize=true",
+        "dateCreated": "2026-08-12T17:33:28Z",
+        "dateModified": "739901",
+        "description": "",
+        "forks": 0,
+        "githubMoleculesUsed": [
+          {
+            "owner": "BarbourSmith",
+            "repoName": "Width"
+          },
+          {
+            "owner": "BarbourSmith",
+            "repoName": "Width"
+          },
+          {
+            "owner": "BarbourSmith",
+            "repoName": "Above"
+          },
+          {
+            "owner": "BarbourSmith",
+            "repoName": "Below"
+          },
+          {
+            "owner": "tristan-huber",
+            "repoName": "crv.PolyMove"
+          }
+        ],
+        "html_url": "https://github.com/tristan-huber/cross_sections_xdir",
+        "lastFoundGit": "2026-11-05T18:23:38.978Z",
+        "likes": 0,
+        "owner": "tristan-huber",
+        "pngURL": "https://raw.githubusercontent.com/tristan-huber/cross_sections_xdir/main/project.png",
+        "privateRepo": false,
+        "projectInputs": [
+          {
+            "name": "profileShape",
+            "type": "geometry"
+          },
+          {
+            "name": "sliceThickness",
+            "type": "number"
+          },
+          {
+            "name": "slicePositions",
+            "type": "array"
+          }
+        ],
+        "pullRequests": [],
+        "ranking": 2,
+        "readme": "https://raw.githubusercontent.com/tristan-huber/cross_sections_xdir/master/README.md?sanitize=true",
+        "searchField": "cross_sections_xdir tristan-huber  ",
+        "svgURL": "https://raw.githubusercontent.com/tristan-huber/cross_sections_xdir/master/project.svg?sanitize=true",
+        "topMoleculeID": "",
+        "topics": [],
+        "userRanking": 0,
+        "userSetAsThumbnail": true,
+        "yyyy": 2026,
+        "repoName": "cross_sections_xdir",
+        "isLocal": false
+      },
+      "unitsKey": "MM",
+      "fileTypeVersion": 1,
+      "scaleToProjectUnits": true,
+      "lastReloadedFromGithubAt": 1793910309996
     },
     {
       "atomType": "Rotate",
@@ -1541,16 +2664,16 @@
     },
     {
       "atomType": "Input",
-      "x": 0.0231,
-      "y": 0.4257,
+      "x": 0.0254,
+      "y": 0.3029,
       "uniqueID": "id-460",
       "name": "slice_thickness",
       "options": []
     },
     {
       "atomType": "Input",
-      "x": 0.0231,
-      "y": 0.5543,
+      "x": 0.0254,
+      "y": 0.6771,
       "uniqueID": "id-463",
       "name": "slice_spacing_on_center",
       "options": []
@@ -1592,14 +2715,14 @@
           "ioValues": [
             {
               "name": "number or geometry",
-              "ioValue": 7.000000200000001
+              "ioValue": 7.000000000000001
             }
           ]
         },
         {
           "atomType": "Input",
-          "x": 0.0231,
-          "y": 0.14,
+          "x": 0.0254,
+          "y": 0.1538,
           "uniqueID": "id-504",
           "name": "Shape",
           "type": "geometry",
@@ -1858,8 +2981,8 @@
         },
         {
           "atomType": "Input",
-          "x": 0.0231,
-          "y": 0.14,
+          "x": 0.0254,
+          "y": 0.1538,
           "uniqueID": "id-934",
           "name": "ShapeToExplode",
           "type": "geometry",
@@ -1928,8 +3051,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.4232,
-      "y": 0.2229,
+      "x": 0.4336,
+      "y": 0.1314,
       "uniqueID": "id-949",
       "name": "centered_slices",
       "topLevel": false,
@@ -1942,11 +3065,11 @@
           "ioValues": [
             {
               "name": "start",
-              "ioValue": 1.0750001000000002
+              "ioValue": 1.075
             },
             {
               "name": "stop",
-              "ioValue": 5.000000200000001
+              "ioValue": 5
             },
             {
               "name": "step",
@@ -1960,8 +3083,8 @@
         },
         {
           "atomType": "Input",
-          "x": 0.0231,
-          "y": 0.14,
+          "x": 0.0254,
+          "y": 0.1538,
           "uniqueID": "id-1136",
           "type": "number",
           "options": []
@@ -1984,8 +3107,8 @@
             {
               "name": "slicePositions",
               "ioValue": [
-                1.0750001000000002,
-                3.6750001
+                1.075,
+                3.675
               ]
             }
           ],
@@ -2017,8 +3140,8 @@
                 {
                   "name": "positions",
                   "ioValue": [
-                    1.0750001000000002,
-                    3.6750001
+                    1.075,
+                    3.675
                   ]
                 },
                 {
@@ -2042,8 +3165,8 @@
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.0231,
-                  "y": 0.14,
+                  "x": 0.0254,
+                  "y": 0.1538,
                   "uniqueID": "id-1144",
                   "name": "kayakbody",
                   "type": "geometry",
@@ -2051,8 +3174,8 @@
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.0231,
-                  "y": 0.224,
+                  "x": 0.0254,
+                  "y": 0.2462,
                   "uniqueID": "id-1145",
                   "name": "positions",
                   "type": "array",
@@ -2066,11 +3189,11 @@
                   "ioValues": [
                     {
                       "name": "x length",
-                      "ioValue": 2.0000002000000014
+                      "ioValue": 2.0000000000000013
                     },
                     {
                       "name": "y length",
-                      "ioValue": 14.000000400000001
+                      "ioValue": 14.000000000000002
                     }
                   ]
                 },
@@ -2176,14 +3299,14 @@
                       "ioValues": [
                         {
                           "name": "number or geometry",
-                          "ioValue": 7.000000200000001
+                          "ioValue": 7.000000000000001
                         }
                       ]
                     },
                     {
                       "atomType": "Input",
-                      "x": 0.0231,
-                      "y": 0.14,
+                      "x": 0.0254,
+                      "y": 0.1538,
                       "uniqueID": "id-1153",
                       "name": "Shape",
                       "type": "geometry",
@@ -2290,14 +3413,14 @@
                       "ioValues": [
                         {
                           "name": "number or geometry",
-                          "ioValue": 2.0000002000000014
+                          "ioValue": 2.0000000000000013
                         }
                       ]
                     },
                     {
                       "atomType": "Input",
-                      "x": 0.0231,
-                      "y": 0.14,
+                      "x": 0.0254,
+                      "y": 0.1538,
                       "uniqueID": "id-1158",
                       "name": "Shape",
                       "type": "geometry",
@@ -2375,8 +3498,8 @@
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.0231,
-                  "y": 0.308,
+                  "x": 0.0254,
+                  "y": 0.3385,
                   "uniqueID": "id-1161",
                   "name": "thickness",
                   "options": []
@@ -2413,8 +3536,8 @@
                     },
                     {
                       "atomType": "Input",
-                      "x": 0.0231,
-                      "y": 0.14,
+                      "x": 0.0254,
+                      "y": 0.1538,
                       "uniqueID": "id-1164",
                       "name": "B",
                       "type": "geometry",
@@ -2422,8 +3545,8 @@
                     },
                     {
                       "atomType": "Input",
-                      "x": 0.0231,
-                      "y": 0.224,
+                      "x": 0.0254,
+                      "y": 0.2462,
                       "uniqueID": "id-1165",
                       "name": "A",
                       "type": "geometry",
@@ -2580,8 +3703,8 @@
                     },
                     {
                       "atomType": "Input",
-                      "x": 0.0231,
-                      "y": 0.14,
+                      "x": 0.0254,
+                      "y": 0.1538,
                       "uniqueID": "id-1172",
                       "name": "A",
                       "type": "geometry",
@@ -2589,8 +3712,8 @@
                     },
                     {
                       "atomType": "Input",
-                      "x": 0.0231,
-                      "y": 0.224,
+                      "x": 0.0254,
+                      "y": 0.2462,
                       "uniqueID": "id-1173",
                       "name": "B",
                       "type": "geometry",
@@ -2688,8 +3811,8 @@
                     {
                       "name": "offsets",
                       "ioValue": [
-                        1.0750001000000002,
-                        3.6750001
+                        1.075,
+                        3.675
                       ]
                     },
                     {
@@ -2717,8 +3840,8 @@
                     },
                     {
                       "atomType": "Input",
-                      "x": 0.0231,
-                      "y": 0.14,
+                      "x": 0.0254,
+                      "y": 0.1538,
                       "uniqueID": "id-1178",
                       "name": "toMove",
                       "type": "geometry",
@@ -2726,8 +3849,8 @@
                     },
                     {
                       "atomType": "Input",
-                      "x": 0.0231,
-                      "y": 0.224,
+                      "x": 0.0254,
+                      "y": 0.2462,
                       "uniqueID": "id-1179",
                       "name": "offsets",
                       "type": "array",
@@ -2735,8 +3858,8 @@
                     },
                     {
                       "atomType": "Input",
-                      "x": 0.0231,
-                      "y": 0.308,
+                      "x": 0.0254,
+                      "y": 0.3385,
                       "uniqueID": "id-1180",
                       "name": "direction",
                       "type": "point3d",
@@ -2756,8 +3879,8 @@
                         {
                           "name": "offsets",
                           "ioValue": [
-                            1.0750001000000002,
-                            3.6750001
+                            1.075,
+                            3.675
                           ]
                         },
                         {
@@ -2835,7 +3958,7 @@
                   "ioValues": [
                     {
                       "name": "x",
-                      "ioValue": 7.000000200000001
+                      "ioValue": 7.000000000000001
                     }
                   ],
                   "currentEquation": "x * 2"
@@ -2952,8 +4075,8 @@
             },
             {
               "atomType": "Input",
-              "x": 0.0231,
-              "y": 0.14,
+              "x": 0.0254,
+              "y": 0.1538,
               "uniqueID": "id-1183",
               "name": "profileShape",
               "type": "geometry",
@@ -2961,16 +4084,16 @@
             },
             {
               "atomType": "Input",
-              "x": 0.0231,
-              "y": 0.224,
+              "x": 0.0254,
+              "y": 0.2462,
               "uniqueID": "id-1184",
               "name": "sliceThickness",
               "options": []
             },
             {
               "atomType": "Input",
-              "x": 0.0231,
-              "y": 0.308,
+              "x": 0.0254,
+              "y": 0.3385,
               "uniqueID": "id-1185",
               "name": "slicePositions",
               "type": "array",
@@ -3074,7 +4197,7 @@
           "ioValues": [
             {
               "name": "width",
-              "ioValue": 5.000000200000001
+              "ioValue": 5
             },
             {
               "name": "spacing",
@@ -3123,14 +4246,14 @@
               "ioValues": [
                 {
                   "name": "number or geometry",
-                  "ioValue": 5.000000200000001
+                  "ioValue": 5
                 }
               ]
             },
             {
               "atomType": "Input",
-              "x": 0.0231,
-              "y": 0.14,
+              "x": 0.0254,
+              "y": 0.1538,
               "uniqueID": "id-955",
               "name": "Shape",
               "type": "geometry",
@@ -3272,6 +4395,11 @@
       "ap2ID": "id-479"
     },
     {
+      "ap2Name": "slicePositions",
+      "ap1ID": "id-2083",
+      "ap2ID": "id-2132"
+    },
+    {
       "ap2Name": "geometry",
       "ap1ID": "id-232",
       "ap2ID": "id-1493"
@@ -3280,6 +4408,16 @@
       "ap2Name": "Shape",
       "ap1ID": "id-232",
       "ap2ID": "id-502"
+    },
+    {
+      "ap2Name": "sliceThickness",
+      "ap1ID": "id-460",
+      "ap2ID": "id-2132"
+    },
+    {
+      "ap2Name": "profileShape",
+      "ap1ID": "id-479",
+      "ap2ID": "id-2132"
     },
     {
       "ap2Name": "geometry",
