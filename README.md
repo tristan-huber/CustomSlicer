@@ -10,7 +10,6 @@
 - **slices_x_axis** (array)
 - **slices_y_axis** (array)
 - **slice_thickness** (number)
-- **slice_spacing_on_center** (number)
 
 
 
