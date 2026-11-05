@@ -37,8 +37,8 @@
   "allAtoms": [
     {
       "atomType": "Move",
-      "x": 0.3281,
-      "y": 0.6,
+      "x": 0.306,
+      "y": 0.5657,
       "uniqueID": "id-1493",
       "ioValues": [
         {
@@ -47,7 +47,7 @@
         },
         {
           "name": "xDist",
-          "ioValue": 7.000000000000001
+          "ioValue": 7.000000200000001
         },
         {
           "name": "yDist",
@@ -71,7 +71,7 @@
         },
         {
           "name": "xDist",
-          "ioValue": -7.000000000000001
+          "ioValue": -7.000000200000001
         },
         {
           "name": "yDist",
@@ -92,7 +92,7 @@
       "ioValues": [
         {
           "name": "x",
-          "ioValue": 7.000000000000001
+          "ioValue": 7.000000200000001
         }
       ],
       "currentEquation": "-1 * x"
@@ -198,9 +198,9 @@
       "name": "ShapeToSlice",
       "type": "import",
       "options": [],
-      "fileName": "ExampleToSlice.stl",
-      "fileSha": "9c8ee62cb2cc5a6e6f747c38c167c4afe101b9e9",
-      "fileType": "STL",
+      "fileName": "ExampleToSlice.step",
+      "fileSha": "1ec6fa1a6ce4b36581e079efa582bffe556b2c42",
+      "fileType": "STEP",
       "repoOwner": "tristan-huber",
       "repoName": "CustomSlicer",
       "SVGwidth": 10
@@ -220,7 +220,7 @@
     {
       "atomType": "Input",
       "x": 0.0254,
-      "y": 0.3257,
+      "y": 0.2462,
       "uniqueID": "id-2080",
       "name": "slices_x_axis",
       "type": "array",
@@ -233,7 +233,7 @@
     {
       "atomType": "Input",
       "x": 0.0254,
-      "y": 0.5086,
+      "y": 0.4143,
       "uniqueID": "id-2083",
       "name": "slices_y_axis",
       "type": "array",
@@ -348,11 +348,11 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 2.0000000000000013
+                  "ioValue": 2.000000200000001
                 },
                 {
                   "name": "y length",
-                  "ioValue": 14.000000000000002
+                  "ioValue": 14.000000400000001
                 }
               ]
             },
@@ -458,7 +458,7 @@
                   "ioValues": [
                     {
                       "name": "number or geometry",
-                      "ioValue": 7.000000000000001
+                      "ioValue": 7.000000200000001
                     }
                   ]
                 },
@@ -572,7 +572,7 @@
                   "ioValues": [
                     {
                       "name": "number or geometry",
-                      "ioValue": 2.0000000000000013
+                      "ioValue": 2.000000200000001
                     }
                   ]
                 },
@@ -1119,7 +1119,7 @@
               "ioValues": [
                 {
                   "name": "x",
-                  "ioValue": 7.000000000000001
+                  "ioValue": 7.000000200000001
                 }
               ],
               "currentEquation": "x * 2"
@@ -1375,8 +1375,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.1602,
-      "y": 0.12,
+      "x": 0.1576,
+      "y": 0.1229,
       "uniqueID": "id-3079",
       "name": "move_to_positive_quadrant",
       "ioValues": [
@@ -1472,8 +1472,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.3919,
-      "y": 0.4629,
+      "x": 0.3971,
+      "y": 0.4171,
       "uniqueID": "id-3100",
       "name": "cross_section_xdir",
       "ioValues": [
@@ -1578,11 +1578,11 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 2.0000000000000013
+                  "ioValue": 2.000000200000001
                 },
                 {
                   "name": "y length",
-                  "ioValue": 10.000000000000002
+                  "ioValue": 10.000000400000001
                 }
               ]
             },
@@ -1688,7 +1688,7 @@
                   "ioValues": [
                     {
                       "name": "number or geometry",
-                      "ioValue": 5.000000000000001
+                      "ioValue": 5.000000200000001
                     }
                   ]
                 },
@@ -1802,7 +1802,7 @@
                   "ioValues": [
                     {
                       "name": "number or geometry",
-                      "ioValue": 2.0000000000000013
+                      "ioValue": 2.000000200000001
                     }
                   ]
                 },
@@ -2355,7 +2355,7 @@
               "ioValues": [
                 {
                   "name": "x",
-                  "ioValue": 5.000000000000001
+                  "ioValue": 5.000000200000001
                 }
               ],
               "currentEquation": "x * 2"
@@ -2586,9 +2586,23 @@
       "lastReloadedFromGithubAt": 1793910309996
     },
     {
+      "atomType": "Equation",
+      "x": 0.1296,
+      "y": 0.7829,
+      "uniqueID": "id-3459",
+      "name": "x - y / 2",
+      "ioValues": [
+        {
+          "name": "y",
+          "ioValue": 0.25
+        }
+      ],
+      "currentEquation": "x - y / 2"
+    },
+    {
       "atomType": "Input",
       "x": 0.0254,
-      "y": 0.68,
+      "y": 0.5657,
       "uniqueID": "id-460",
       "name": "slice_thickness",
       "options": []
@@ -2615,7 +2629,7 @@
           "ioValues": [
             {
               "name": "number or geometry",
-              "ioValue": 7.000000000000001
+              "ioValue": 7.000000200000001
             }
           ]
         },
@@ -2688,8 +2702,8 @@
     },
     {
       "atomType": "Intersection",
-      "x": 0.6198,
-      "y": 0.2457,
+      "x": 0.5898,
+      "y": 0.2429,
       "uniqueID": "id-540",
       "ioValues": [
         {
@@ -2876,8 +2890,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.6829,
-      "y": 0.1543,
+      "x": 0.6452,
+      "y": 0.1743,
       "uniqueID": "id-936",
       "name": "ExplodeDisjoint",
       "ioValues": [
@@ -3028,6 +3042,11 @@
       "ap2ID": "id-3100"
     },
     {
+      "ap2Name": "x",
+      "ap1ID": "id-2083",
+      "ap2ID": "id-3459"
+    },
+    {
       "ap2Name": "geometry1",
       "ap1ID": "id-2132",
       "ap2ID": "id-540"
@@ -3071,6 +3090,11 @@
       "ap2Name": "sliceThickness",
       "ap1ID": "id-460",
       "ap2ID": "id-3100"
+    },
+    {
+      "ap2Name": "y",
+      "ap1ID": "id-460",
+      "ap2ID": "id-3459"
     },
     {
       "ap2Name": "xDist",
