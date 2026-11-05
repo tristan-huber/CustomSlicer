@@ -181,14 +181,14 @@
         },
         {
           "name": "Part Name",
-          "ioValue": "CustomSlicer",
-          "currentEquation": "CustomSlicer"
+          "ioValue": "PartLayout",
+          "currentEquation": "PartLayout"
         }
       ],
       "type": null,
       "resolution": 96,
       "importIndex": 0,
-      "partName": "CustomSlicer"
+      "partName": "PartLayout"
     },
     {
       "atomType": "Input",
