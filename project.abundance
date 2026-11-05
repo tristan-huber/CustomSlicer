@@ -2744,8 +2744,8 @@
     },
     {
       "atomType": "Rotate",
-      "x": 0.166,
-      "y": 0.7914,
+      "x": 0.1191,
+      "y": 0.8171,
       "uniqueID": "id-2602",
       "ioValues": [
         {
@@ -2754,7 +2754,8 @@
         },
         {
           "name": "x-axis degrees",
-          "ioValue": 40
+          "ioValue": 40,
+          "currentEquation": "40"
         },
         {
           "name": "y-axis degrees",
@@ -4509,17 +4510,17 @@
     {
       "ap2Name": "geometry",
       "ap1ID": "id-2593",
-      "ap2ID": "id-2596"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-2593",
       "ap2ID": "id-2602"
     },
     {
       "ap2Name": "shape",
       "ap1ID": "id-2596",
       "ap2ID": "id-479"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-2602",
+      "ap2ID": "id-2596"
     },
     {
       "ap2Name": "sliceThickness",
