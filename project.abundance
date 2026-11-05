@@ -1688,8 +1688,8 @@
     },
     {
       "atomType": "Code",
-      "x": 0.8236,
-      "y": 0.2457,
+      "x": 0.8203,
+      "y": 0.2629,
       "uniqueID": "id-835",
       "ioValues": [
         {
@@ -1723,8 +1723,8 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.7233,
-      "y": 0.6686,
+      "x": 0.7318,
+      "y": 0.6457,
       "uniqueID": "id-864",
       "ioValues": [
         {
@@ -1775,7 +1775,16 @@
       ],
       "orientations": [
         {
-          "downwardFaceIndex": 9,
+          "downwardFaceIndex": 2,
+          "faceCount": 5,
+          "faceNormal": [
+            -1,
+            0,
+            -1.11022302462516e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 11,
           "faceCount": 22,
           "faceNormal": [
             1.11022302462516e-16,
@@ -1793,88 +1802,151 @@
           ]
         },
         {
-          "downwardFaceIndex": 11,
+          "downwardFaceIndex": 2,
+          "faceCount": 5,
+          "faceNormal": [
+            -1,
+            0,
+            -1.11022302462516e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 15,
+          "faceCount": 30,
+          "faceNormal": [
+            -1.11022302462516e-16,
+            1,
+            -1.11022302462516e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 4,
+          "faceCount": 5,
+          "faceNormal": [
+            1,
+            0,
+            1.11022302462516e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 5,
+          "faceNormal": [
+            -1,
+            0,
+            -1.11022302462516e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 15,
+          "faceCount": 30,
+          "faceNormal": [
+            -1.11022302462516e-16,
+            1,
+            -1.11022302462516e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 4,
+          "faceCount": 5,
+          "faceNormal": [
+            1,
+            0,
+            1.11022302462516e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 5,
+          "faceNormal": [
+            -1,
+            0,
+            -1.11022302462516e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 15,
+          "faceCount": 30,
+          "faceNormal": [
+            -1.11022302462516e-16,
+            1,
+            -1.11022302462516e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 4,
+          "faceCount": 5,
+          "faceNormal": [
+            1,
+            0,
+            1.11022302462516e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 5,
+          "faceNormal": [
+            -1,
+            0,
+            -1.11022302462516e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 10,
+          "faceCount": 22,
+          "faceNormal": [
+            -1.11022302462516e-16,
+            1,
+            -1.11022302462516e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 4,
+          "faceCount": 5,
+          "faceNormal": [
+            1,
+            0,
+            1.11022302462516e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 3,
+          "faceCount": 15,
+          "faceNormal": [
+            1,
+            0,
+            1.11022302462516e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 1,
           "faceCount": 26,
           "faceNormal": [
-            -1.11022302462516e-16,
-            1,
+            -1,
+            0,
             -1.11022302462516e-16
           ]
         },
         {
-          "downwardFaceIndex": 4,
-          "faceCount": 5,
-          "faceNormal": [
-            1,
-            0,
-            1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 11,
+          "downwardFaceIndex": 3,
           "faceCount": 26,
           "faceNormal": [
-            -1.11022302462516e-16,
             1,
+            0,
+            1.11022302462516e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 1,
+          "faceCount": 15,
+          "faceNormal": [
+            -1,
+            0,
             -1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 4,
-          "faceCount": 5,
-          "faceNormal": [
-            1,
-            0,
-            1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 12,
-          "faceCount": 22,
-          "faceNormal": [
-            -1.11022302462516e-16,
-            1,
-            -1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 4,
-          "faceCount": 5,
-          "faceNormal": [
-            1,
-            0,
-            1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 3,
-          "faceCount": 12,
-          "faceNormal": [
-            1,
-            0,
-            1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 3,
-          "faceCount": 22,
-          "faceNormal": [
-            1,
-            0,
-            1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 3,
-          "faceCount": 22,
-          "faceNormal": [
-            1,
-            0,
-            1.11022302462516e-16
           ]
         }
       ],
-      "orientationsForHashed": 11
+      "orientationsForHashed": 19
     },
     {
       "atomType": "GitHubMolecule",
