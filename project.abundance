@@ -2714,8 +2714,8 @@
         }
       ],
       "interpreterVersion": 1,
-      "code": "function run(shape: Assembly) {\n  return shape.onLeafs((leaf) => {\n    const [[xMin, yMin, zMin], [xMax, yMax, zMax]] = leaf.geometry.boundingBox.bounds;\n    const midZ = (zMin + zMax) / 2;\n    const pad = 1;\n    const keep = replicad.makeBox(\n      [xMin - pad, yMin - pad, zMin - pad],\n      [xMax + pad, yMax + pad, midZ]\n    );\n    leaf.geometry = leaf.geometry.intersect(keep);\n    return leaf;\n  });\n}",
-      "compiledCode": "\"use strict\";\nfunction run(shape) {\n    return shape.onLeafs((leaf) => {\n        const [[xMin, yMin, zMin], [xMax, yMax, zMax]] = leaf.geometry.boundingBox.bounds;\n        const midZ = (zMin + zMax) / 2;\n        const pad = 1;\n        const keep = replicad.makeBox([xMin - pad, yMin - pad, zMin - pad], [xMax + pad, yMax + pad, midZ]);\n        leaf.geometry = leaf.geometry.intersect(keep);\n        return leaf;\n    });\n}\n"
+      "code": "// Cut in half vertically. For each leaf, trim away it's bottom half.\nfunction run(shape: Assembly) {\n  return shape.onLeafs((leaf) => {\n    const [[xMin, yMin, zMin], [xMax, yMax, zMax]] = leaf.geometry.boundingBox.bounds;\n    const midZ = (zMin + zMax) / 2;\n    const pad = 1;\n    const keep = replicad.makeBox(\n      [xMin - pad, yMin - pad, zMin - pad],\n      [xMax + pad, yMax + pad, midZ]\n    );\n    leaf.geometry = leaf.geometry.intersect(keep);\n    return leaf;\n  });\n}",
+      "compiledCode": "\"use strict\";\n// Cut in half vertically. For each leaf, trim away it's bottom half.\nfunction run(shape) {\n    return shape.onLeafs((leaf) => {\n        const [[xMin, yMin, zMin], [xMax, yMax, zMax]] = leaf.geometry.boundingBox.bounds;\n        const midZ = (zMin + zMax) / 2;\n        const pad = 1;\n        const keep = replicad.makeBox([xMin - pad, yMin - pad, zMin - pad], [xMax + pad, yMax + pad, midZ]);\n        leaf.geometry = leaf.geometry.intersect(keep);\n        return leaf;\n    });\n}\n"
     },
     {
       "atomType": "Code",
