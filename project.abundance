@@ -10,20 +10,31 @@
       "ioValue": "__GEOMETRY_INPUT__"
     },
     {
+      "name": "slices_x_axis",
+      "ioValue": [
+        1,
+        2.5,
+        4
+      ]
+    },
+    {
+      "name": "slices_y_axis",
+      "ioValue": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
       "name": "slice_thickness",
       "ioValue": 0.25
     },
     {
       "name": "slice_spacing_on_center",
       "ioValue": 2.6
-    },
-    {
-      "name": "slices_x_axis",
-      "ioValue": 10
-    },
-    {
-      "name": "slices_y_axis",
-      "ioValue": 10
     }
   ],
   "topLevel": true,
@@ -44,11 +55,11 @@
           "ioValues": [
             {
               "name": "start",
-              "ioValue": 0.7750000000000004
+              "ioValue": 0.9750009999999998
             },
             {
               "name": "stop",
-              "ioValue": 7.000000000000001
+              "ioValue": 10.000002
             },
             {
               "name": "step",
@@ -86,9 +97,10 @@
             {
               "name": "slicePositions",
               "ioValue": [
-                0.7750000000000004,
-                3.3750000000000004,
-                5.9750000000000005
+                0.9750009999999998,
+                3.575001,
+                6.175001,
+                8.775001
               ]
             }
           ],
@@ -120,9 +132,10 @@
                 {
                   "name": "positions",
                   "ioValue": [
-                    0.7750000000000004,
-                    3.3750000000000004,
-                    5.9750000000000005
+                    0.9750009999999998,
+                    3.575001,
+                    6.175001,
+                    8.775001
                   ]
                 },
                 {
@@ -170,11 +183,11 @@
                   "ioValues": [
                     {
                       "name": "x length",
-                      "ioValue": 2.0000000000000013
+                      "ioValue": 10.000001999999999
                     },
                     {
                       "name": "y length",
-                      "ioValue": 10.000000000000002
+                      "ioValue": 20.000003999999997
                     }
                   ]
                 },
@@ -280,7 +293,7 @@
                       "ioValues": [
                         {
                           "name": "number or geometry",
-                          "ioValue": 5.000000000000001
+                          "ioValue": 10.000001999999999
                         }
                       ]
                     },
@@ -394,7 +407,7 @@
                       "ioValues": [
                         {
                           "name": "number or geometry",
-                          "ioValue": 2.0000000000000013
+                          "ioValue": 10.000001999999999
                         }
                       ]
                     },
@@ -792,9 +805,10 @@
                     {
                       "name": "offsets",
                       "ioValue": [
-                        0.7750000000000004,
-                        3.3750000000000004,
-                        5.9750000000000005
+                        0.9750009999999998,
+                        3.575001,
+                        6.175001,
+                        8.775001
                       ]
                     },
                     {
@@ -861,9 +875,10 @@
                         {
                           "name": "offsets",
                           "ioValue": [
-                            0.7750000000000004,
-                            3.3750000000000004,
-                            5.9750000000000005
+                            0.9750009999999998,
+                            3.575001,
+                            6.175001,
+                            8.775001
                           ]
                         },
                         {
@@ -941,7 +956,7 @@
                   "ioValues": [
                     {
                       "name": "x",
-                      "ioValue": 5.000000000000001
+                      "ioValue": 10.000001999999999
                     }
                   ],
                   "currentEquation": "x * 2"
@@ -1180,7 +1195,7 @@
           "ioValues": [
             {
               "name": "width",
-              "ioValue": 7.000000000000001
+              "ioValue": 10.000002
             },
             {
               "name": "spacing",
@@ -1229,7 +1244,7 @@
               "ioValues": [
                 {
                   "name": "number or geometry",
-                  "ioValue": 7.000000000000001
+                  "ioValue": 10.000002
                 }
               ]
             },
@@ -1352,7 +1367,7 @@
         },
         {
           "name": "xDist",
-          "ioValue": 7.000000000000001
+          "ioValue": 10.000002
         },
         {
           "name": "yDist",
@@ -1376,7 +1391,7 @@
         },
         {
           "name": "xDist",
-          "ioValue": -7.000000000000001
+          "ioValue": -10.000002
         },
         {
           "name": "yDist",
@@ -1397,7 +1412,7 @@
       "ioValues": [
         {
           "name": "x",
-          "ioValue": 7.000000000000001
+          "ioValue": 10.000002
         }
       ],
       "currentEquation": "-1 * x"
@@ -1498,7 +1513,7 @@
     {
       "atomType": "Input",
       "x": 0.0254,
-      "y": 0.1657,
+      "y": 0.1538,
       "uniqueID": "id-1734",
       "name": "ShapeToSlice",
       "type": "import",
@@ -1525,36 +1540,36 @@
     {
       "atomType": "Input",
       "x": 0.0254,
-      "y": 0.44,
+      "y": 0.2462,
       "uniqueID": "id-2080",
       "name": "slices_x_axis",
       "type": "array",
       "options": [
-        "1",
-        "2.5",
-        "4"
+        1,
+        2.5,
+        4
       ]
     },
     {
       "atomType": "Input",
       "x": 0.0254,
-      "y": 0.5657,
+      "y": 0.3385,
       "uniqueID": "id-2083",
       "name": "slices_y_axis",
       "type": "array",
       "options": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6"
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
       ]
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.2904,
-      "y": 0.1371,
+      "x": 0.4388,
+      "y": 0.4171,
       "uniqueID": "id-2132",
       "name": "cross_section_xdir",
       "ioValues": [
@@ -1568,7 +1583,14 @@
         },
         {
           "name": "slicePositions",
-          "ioValue": 10
+          "ioValue": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
         }
       ],
       "topLevel": false,
@@ -1598,7 +1620,14 @@
             },
             {
               "name": "positions",
-              "ioValue": 10
+              "ioValue": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ]
             },
             {
               "name": "thickness",
@@ -1645,11 +1674,11 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 2.0000000000000013
+                  "ioValue": 10.000002
                 },
                 {
                   "name": "y length",
-                  "ioValue": 14.000000000000002
+                  "ioValue": 20.000004
                 }
               ]
             },
@@ -1755,7 +1784,7 @@
                   "ioValues": [
                     {
                       "name": "number or geometry",
-                      "ioValue": 7.000000000000001
+                      "ioValue": 10.000002
                     }
                   ]
                 },
@@ -1869,7 +1898,7 @@
                   "ioValues": [
                     {
                       "name": "number or geometry",
-                      "ioValue": 2.0000000000000013
+                      "ioValue": 10.000002
                     }
                   ]
                 },
@@ -2266,7 +2295,14 @@
                 },
                 {
                   "name": "offsets",
-                  "ioValue": 10
+                  "ioValue": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                  ]
                 },
                 {
                   "name": "direction",
@@ -2331,7 +2367,14 @@
                     },
                     {
                       "name": "offsets",
-                      "ioValue": 10
+                      "ioValue": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6
+                      ]
                     },
                     {
                       "name": "direction",
@@ -2408,7 +2451,7 @@
               "ioValues": [
                 {
                   "name": "x",
-                  "ioValue": 7.000000000000001
+                  "ioValue": 10.000002
                 }
               ],
               "currentEquation": "x * 2"
@@ -2663,9 +2706,70 @@
       ]
     },
     {
+      "atomType": "Circle",
+      "x": 0.0625,
+      "y": 0.8829,
+      "uniqueID": "id-2593",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.1055,
+      "y": 0.6229,
+      "uniqueID": "id-2596",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": -2
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": -5,
+          "currentEquation": "-5"
+        }
+      ]
+    },
+    {
+      "atomType": "Rotate",
+      "x": 0.166,
+      "y": 0.7914,
+      "uniqueID": "id-2602",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "x-axis degrees",
+          "ioValue": 40
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
       "atomType": "Input",
       "x": 0.0254,
-      "y": 0.3029,
+      "y": 0.4308,
       "uniqueID": "id-460",
       "name": "slice_thickness",
       "options": []
@@ -2673,15 +2777,15 @@
     {
       "atomType": "Input",
       "x": 0.0254,
-      "y": 0.6771,
+      "y": 0.5231,
       "uniqueID": "id-463",
       "name": "slice_spacing_on_center",
       "options": []
     },
     {
       "atomType": "Code",
-      "x": 0.2155,
-      "y": 0.3714,
+      "x": 0.1784,
+      "y": 0.1571,
       "uniqueID": "id-479",
       "ioValues": [
         {
@@ -2690,8 +2794,8 @@
         }
       ],
       "interpreterVersion": 1,
-      "code": "function run(shape: Assembly) {\n  let left = Number.POSITIVE_INFINITY\n  let south = Number.POSITIVE_INFINITY\n  shape.onLeafs((leaf) => {\n    const bounds = leaf.geometry.boundingBox.bounds;\n    left = Math.min(left, bounds[0][0])\n    south = Math.min(south, bounds[0][1])\n    return leaf;\n  })\n  console.log(`left: ${left}, south: ${south}`)\n  return shape.onLeafs((leaf) => {\n    leaf.geometry = leaf.geometry.translate(-1 * left, -1 * south, 0)\n    return leaf;\n  })\n}",
-      "compiledCode": "\"use strict\";\nfunction run(shape) {\n    let left = Number.POSITIVE_INFINITY;\n    let south = Number.POSITIVE_INFINITY;\n    shape.onLeafs((leaf) => {\n        const bounds = leaf.geometry.boundingBox.bounds;\n        left = Math.min(left, bounds[0][0]);\n        south = Math.min(south, bounds[0][1]);\n        return leaf;\n    });\n    console.log(`left: ${left}, south: ${south}`);\n    return shape.onLeafs((leaf) => {\n        leaf.geometry = leaf.geometry.translate(-1 * left, -1 * south, 0);\n        return leaf;\n    });\n}\n"
+      "code": "function run(shape: Assembly) {\n  let left = Number.POSITIVE_INFINITY\n  let south = Number.POSITIVE_INFINITY\n  let under = Number.POSITIVE_INFINITY\n  shape.onLeafs((leaf) => {\n    const bounds = leaf.geometry.boundingBox.bounds;\n    left = Math.min(left, bounds[0][0])\n    south = Math.min(south, bounds[0][1])\n    const zbound = bounds[0][2];\n    under = zbound != undefined ? Math.min(under, zbound) : under\n    return leaf;\n  })\n  console.log(`left: ${left}, south: ${south}, under ${under}`)\n  under = under == Number.POSITIVE_INFINITY ? 0 : under;\n  return shape.onLeafs((leaf) => {\n    leaf.geometry = leaf.geometry.translate(-1 * left, -1 * south, -1 * under)\n    return leaf;\n  })\n}",
+      "compiledCode": "\"use strict\";\nfunction run(shape) {\n    let left = Number.POSITIVE_INFINITY;\n    let south = Number.POSITIVE_INFINITY;\n    let under = Number.POSITIVE_INFINITY;\n    shape.onLeafs((leaf) => {\n        const bounds = leaf.geometry.boundingBox.bounds;\n        left = Math.min(left, bounds[0][0]);\n        south = Math.min(south, bounds[0][1]);\n        const zbound = bounds[0][2];\n        under = zbound != undefined ? Math.min(under, zbound) : under;\n        return leaf;\n    });\n    console.log(`left: ${left}, south: ${south}, under ${under}`);\n    under = under == Number.POSITIVE_INFINITY ? 0 : under;\n    return shape.onLeafs((leaf) => {\n        leaf.geometry = leaf.geometry.translate(-1 * left, -1 * south, -1 * under);\n        return leaf;\n    });\n}\n"
     },
     {
       "atomType": "GitHubMolecule",
@@ -2715,7 +2819,7 @@
           "ioValues": [
             {
               "name": "number or geometry",
-              "ioValue": 7.000000000000001
+              "ioValue": 10.000002
             }
           ]
         },
@@ -3065,11 +3169,11 @@
           "ioValues": [
             {
               "name": "start",
-              "ioValue": 1.075
+              "ioValue": 0.9750009999999998
             },
             {
               "name": "stop",
-              "ioValue": 5
+              "ioValue": 10.000002
             },
             {
               "name": "step",
@@ -3107,8 +3211,10 @@
             {
               "name": "slicePositions",
               "ioValue": [
-                1.075,
-                3.675
+                0.9750009999999998,
+                3.575001,
+                6.175001,
+                8.775001
               ]
             }
           ],
@@ -3140,8 +3246,10 @@
                 {
                   "name": "positions",
                   "ioValue": [
-                    1.075,
-                    3.675
+                    0.9750009999999998,
+                    3.575001,
+                    6.175001,
+                    8.775001
                   ]
                 },
                 {
@@ -3189,11 +3297,7 @@
                   "ioValues": [
                     {
                       "name": "x length",
-                      "ioValue": 2.0000000000000013
-                    },
-                    {
-                      "name": "y length",
-                      "ioValue": 14.000000000000002
+                      "ioValue": 10.000002
                     }
                   ]
                 },
@@ -3299,7 +3403,7 @@
                       "ioValues": [
                         {
                           "name": "number or geometry",
-                          "ioValue": 7.000000000000001
+                          "ioValue": "__GEOMETRY_INPUT__"
                         }
                       ]
                     },
@@ -3413,7 +3517,7 @@
                       "ioValues": [
                         {
                           "name": "number or geometry",
-                          "ioValue": 2.0000000000000013
+                          "ioValue": 10.000002
                         }
                       ]
                     },
@@ -3811,8 +3915,10 @@
                     {
                       "name": "offsets",
                       "ioValue": [
-                        1.075,
-                        3.675
+                        0.9750009999999998,
+                        3.575001,
+                        6.175001,
+                        8.775001
                       ]
                     },
                     {
@@ -3879,8 +3985,10 @@
                         {
                           "name": "offsets",
                           "ioValue": [
-                            1.075,
-                            3.675
+                            0.9750009999999998,
+                            3.575001,
+                            6.175001,
+                            8.775001
                           ]
                         },
                         {
@@ -3955,12 +4063,6 @@
                   "y": 0.6,
                   "uniqueID": "id-1182",
                   "name": "x * 2",
-                  "ioValues": [
-                    {
-                      "name": "x",
-                      "ioValue": 7.000000000000001
-                    }
-                  ],
                   "currentEquation": "x * 2"
                 }
               ],
@@ -4197,7 +4299,7 @@
           "ioValues": [
             {
               "name": "width",
-              "ioValue": 5
+              "ioValue": 10.000002
             },
             {
               "name": "spacing",
@@ -4246,7 +4348,7 @@
               "ioValues": [
                 {
                   "name": "number or geometry",
-                  "ioValue": 5
+                  "ioValue": 10.000002
                 }
               ]
             },
@@ -4390,11 +4492,6 @@
       "ap2ID": "id-868"
     },
     {
-      "ap2Name": "shape",
-      "ap1ID": "id-1734",
-      "ap2ID": "id-479"
-    },
-    {
       "ap2Name": "slicePositions",
       "ap1ID": "id-2083",
       "ap2ID": "id-2132"
@@ -4408,6 +4505,21 @@
       "ap2Name": "Shape",
       "ap1ID": "id-232",
       "ap2ID": "id-502"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-2593",
+      "ap2ID": "id-2596"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-2593",
+      "ap2ID": "id-2602"
+    },
+    {
+      "ap2Name": "shape",
+      "ap1ID": "id-2596",
+      "ap2ID": "id-479"
     },
     {
       "ap2Name": "sliceThickness",
