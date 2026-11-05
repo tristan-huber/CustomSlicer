@@ -8,6 +8,7 @@
 
 - **slice_thickness** (number)
 - **slice_spacing_on_center** (number)
+- **ShapeToSlice** (geometry)
 
 
 
