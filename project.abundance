@@ -15,7 +15,8 @@
     },
     {
       "name": "slice_spacing_on_center",
-      "ioValue": 2
+      "ioValue": 2.6,
+      "currentEquation": "2.6"
     }
   ],
   "topLevel": true,
@@ -36,7 +37,7 @@
           "ioValues": [
             {
               "name": "start",
-              "ioValue": 0.3750001000000007
+              "ioValue": 0.7750001000000006
             },
             {
               "name": "stop",
@@ -44,7 +45,7 @@
             },
             {
               "name": "step",
-              "ioValue": 2,
+              "ioValue": 2.6,
               "currentEquation": "slice_spacing_on_center"
             }
           ],
@@ -78,10 +79,9 @@
             {
               "name": "slicePositions",
               "ioValue": [
-                0.3750001000000007,
-                2.3750001000000007,
-                4.375000100000001,
-                6.375000100000001
+                0.7750001000000006,
+                3.3750001000000007,
+                5.975000100000001
               ]
             }
           ],
@@ -113,10 +113,9 @@
                 {
                   "name": "positions",
                   "ioValue": [
-                    0.3750001000000007,
-                    2.3750001000000007,
-                    4.375000100000001,
-                    6.375000100000001
+                    0.7750001000000006,
+                    3.3750001000000007,
+                    5.975000100000001
                   ]
                 },
                 {
@@ -786,10 +785,9 @@
                     {
                       "name": "offsets",
                       "ioValue": [
-                        0.3750001000000007,
-                        2.3750001000000007,
-                        4.375000100000001,
-                        6.375000100000001
+                        0.7750001000000006,
+                        3.3750001000000007,
+                        5.975000100000001
                       ]
                     },
                     {
@@ -856,10 +854,9 @@
                         {
                           "name": "offsets",
                           "ioValue": [
-                            0.3750001000000007,
-                            2.3750001000000007,
-                            4.375000100000001,
-                            6.375000100000001
+                            0.7750001000000006,
+                            3.3750001000000007,
+                            5.975000100000001
                           ]
                         },
                         {
@@ -1180,7 +1177,7 @@
             },
             {
               "name": "spacing",
-              "ioValue": 2,
+              "ioValue": 2.6,
               "currentEquation": "slice_spacing_on_center"
             },
             {
@@ -1771,8 +1768,8 @@
       ],
       "orientations": [
         {
-          "downwardFaceIndex": 13,
-          "faceCount": 30,
+          "downwardFaceIndex": 17,
+          "faceCount": 23,
           "faceNormal": [
             1.11022302462516e-16,
             -1,
@@ -1780,8 +1777,8 @@
           ]
         },
         {
-          "downwardFaceIndex": 9,
-          "faceCount": 30,
+          "downwardFaceIndex": 11,
+          "faceCount": 22,
           "faceNormal": [
             -1.11022302462516e-16,
             1,
@@ -1789,8 +1786,8 @@
           ]
         },
         {
-          "downwardFaceIndex": 9,
-          "faceCount": 30,
+          "downwardFaceIndex": 12,
+          "faceCount": 23,
           "faceNormal": [
             -1.11022302462516e-16,
             1,
@@ -1798,43 +1795,25 @@
           ]
         },
         {
-          "downwardFaceIndex": 10,
-          "faceCount": 30,
+          "downwardFaceIndex": 1,
+          "faceCount": 16,
           "faceNormal": [
-            -1.11022302462516e-16,
-            1,
+            -1,
+            0,
             -1.11022302462516e-16
           ]
         },
         {
           "downwardFaceIndex": 3,
-          "faceCount": 25,
+          "faceCount": 16,
           "faceNormal": [
             1,
             0,
             1.11022302462516e-16
           ]
-        },
-        {
-          "downwardFaceIndex": 1,
-          "faceCount": 22,
-          "faceNormal": [
-            -1,
-            0,
-            -1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 1,
-          "faceCount": 25,
-          "faceNormal": [
-            -1,
-            0,
-            -1.11022302462516e-16
-          ]
         }
       ],
-      "orientationsForHashed": 7
+      "orientationsForHashed": 5
     },
     {
       "atomType": "GitHubMolecule",
@@ -1963,7 +1942,7 @@
           "ioValues": [
             {
               "name": "start",
-              "ioValue": 0.3750001000000003
+              "ioValue": 1.0750001000000002
             },
             {
               "name": "stop",
@@ -1971,7 +1950,7 @@
             },
             {
               "name": "step",
-              "ioValue": 2,
+              "ioValue": 2.6,
               "currentEquation": "slice_spacing_on_center"
             }
           ],
@@ -2005,9 +1984,8 @@
             {
               "name": "slicePositions",
               "ioValue": [
-                0.3750001000000003,
-                2.3750001000000003,
-                4.3750001
+                1.0750001000000002,
+                3.6750001
               ]
             }
           ],
@@ -2039,9 +2017,8 @@
                 {
                   "name": "positions",
                   "ioValue": [
-                    0.3750001000000003,
-                    2.3750001000000003,
-                    4.3750001
+                    1.0750001000000002,
+                    3.6750001
                   ]
                 },
                 {
@@ -2711,9 +2688,8 @@
                     {
                       "name": "offsets",
                       "ioValue": [
-                        0.3750001000000003,
-                        2.3750001000000003,
-                        4.3750001
+                        1.0750001000000002,
+                        3.6750001
                       ]
                     },
                     {
@@ -2780,9 +2756,8 @@
                         {
                           "name": "offsets",
                           "ioValue": [
-                            0.3750001000000003,
-                            2.3750001000000003,
-                            4.3750001
+                            1.0750001000000002,
+                            3.6750001
                           ]
                         },
                         {
@@ -3103,7 +3078,7 @@
             },
             {
               "name": "spacing",
-              "ioValue": 2,
+              "ioValue": 2.6,
               "currentEquation": "slice_spacing_on_center"
             },
             {
