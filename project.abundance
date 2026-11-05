@@ -1771,17 +1771,8 @@
       ],
       "orientations": [
         {
-          "downwardFaceIndex": 2,
-          "faceCount": 5,
-          "faceNormal": [
-            -1,
-            0,
-            -1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 11,
-          "faceCount": 22,
+          "downwardFaceIndex": 13,
+          "faceCount": 30,
           "faceNormal": [
             1.11022302462516e-16,
             -1,
@@ -1789,25 +1780,7 @@
           ]
         },
         {
-          "downwardFaceIndex": 4,
-          "faceCount": 5,
-          "faceNormal": [
-            1,
-            0,
-            1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 2,
-          "faceCount": 5,
-          "faceNormal": [
-            -1,
-            0,
-            -1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 15,
+          "downwardFaceIndex": 9,
           "faceCount": 30,
           "faceNormal": [
             -1.11022302462516e-16,
@@ -1816,80 +1789,17 @@
           ]
         },
         {
-          "downwardFaceIndex": 4,
-          "faceCount": 5,
-          "faceNormal": [
-            1,
-            0,
-            1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 2,
-          "faceCount": 5,
-          "faceNormal": [
-            -1,
-            0,
-            -1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 15,
+          "downwardFaceIndex": 9,
           "faceCount": 30,
           "faceNormal": [
             -1.11022302462516e-16,
             1,
-            -1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 4,
-          "faceCount": 5,
-          "faceNormal": [
-            1,
-            0,
-            1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 2,
-          "faceCount": 5,
-          "faceNormal": [
-            -1,
-            0,
-            -1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 15,
-          "faceCount": 30,
-          "faceNormal": [
-            -1.11022302462516e-16,
-            1,
-            -1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 4,
-          "faceCount": 5,
-          "faceNormal": [
-            1,
-            0,
-            1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 2,
-          "faceCount": 5,
-          "faceNormal": [
-            -1,
-            0,
             -1.11022302462516e-16
           ]
         },
         {
           "downwardFaceIndex": 10,
-          "faceCount": 22,
+          "faceCount": 30,
           "faceNormal": [
             -1.11022302462516e-16,
             1,
@@ -1897,17 +1807,8 @@
           ]
         },
         {
-          "downwardFaceIndex": 4,
-          "faceCount": 5,
-          "faceNormal": [
-            1,
-            0,
-            1.11022302462516e-16
-          ]
-        },
-        {
           "downwardFaceIndex": 3,
-          "faceCount": 15,
+          "faceCount": 25,
           "faceNormal": [
             1,
             0,
@@ -1916,7 +1817,7 @@
         },
         {
           "downwardFaceIndex": 1,
-          "faceCount": 26,
+          "faceCount": 22,
           "faceNormal": [
             -1,
             0,
@@ -1924,17 +1825,8 @@
           ]
         },
         {
-          "downwardFaceIndex": 3,
-          "faceCount": 26,
-          "faceNormal": [
-            1,
-            0,
-            1.11022302462516e-16
-          ]
-        },
-        {
           "downwardFaceIndex": 1,
-          "faceCount": 15,
+          "faceCount": 25,
           "faceNormal": [
             -1,
             0,
@@ -1942,7 +1834,7 @@
           ]
         }
       ],
-      "orientationsForHashed": 19
+      "orientationsForHashed": 7
     },
     {
       "atomType": "GitHubMolecule",
