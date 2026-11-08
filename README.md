@@ -10,6 +10,7 @@
 - **slices_x_axis** (array)
 - **slices_y_axis** (array)
 - **slice_thickness** (number)
+- **gcode_bit_size** (number)
 
 
 

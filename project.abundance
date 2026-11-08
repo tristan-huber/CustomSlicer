@@ -31,6 +31,10 @@
     {
       "name": "slice_thickness",
       "ioValue": 0.25
+    },
+    {
+      "name": "gcode_bit_size",
+      "ioValue": 0.2499
     }
   ],
   "topLevel": true,
@@ -2586,18 +2590,12 @@
       "lastReloadedFromGithubAt": 1793910309996
     },
     {
-      "atomType": "Equation",
-      "x": 0.1296,
-      "y": 0.7829,
-      "uniqueID": "id-3459",
-      "name": "x - y / 2",
-      "ioValues": [
-        {
-          "name": "y",
-          "ioValue": 0.25
-        }
-      ],
-      "currentEquation": "x - y / 2"
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.7798,
+      "uniqueID": "id-3463",
+      "name": "gcode_bit_size",
+      "options": []
     },
     {
       "atomType": "Input",
@@ -3042,11 +3040,6 @@
       "ap2ID": "id-3100"
     },
     {
-      "ap2Name": "x",
-      "ap1ID": "id-2083",
-      "ap2ID": "id-3459"
-    },
-    {
       "ap2Name": "geometry1",
       "ap1ID": "id-2132",
       "ap2ID": "id-540"
@@ -3082,6 +3075,11 @@
       "ap2ID": "id-1685"
     },
     {
+      "ap2Name": "Tool Size",
+      "ap1ID": "id-3463",
+      "ap2ID": "id-1721"
+    },
+    {
       "ap2Name": "sliceThickness",
       "ap1ID": "id-460",
       "ap2ID": "id-2132"
@@ -3090,11 +3088,6 @@
       "ap2Name": "sliceThickness",
       "ap1ID": "id-460",
       "ap2ID": "id-3100"
-    },
-    {
-      "ap2Name": "y",
-      "ap1ID": "id-460",
-      "ap2ID": "id-3459"
     },
     {
       "ap2Name": "xDist",
