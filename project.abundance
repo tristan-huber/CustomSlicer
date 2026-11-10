@@ -55,7 +55,7 @@
         },
         {
           "name": "yDist",
-          "ioValue": 127.0000002
+          "ioValue": 5.000000200000001
         },
         {
           "name": "zDist",
@@ -79,7 +79,7 @@
         },
         {
           "name": "yDist",
-          "ioValue": -127.0000002
+          "ioValue": -5.000000200000001
         },
         {
           "name": "zDist",
@@ -96,7 +96,7 @@
       "ioValues": [
         {
           "name": "x",
-          "ioValue": 127.0000002
+          "ioValue": 5.000000200000001
         }
       ],
       "currentEquation": "-1 * x"
@@ -352,11 +352,11 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 50.800000200000035
+                  "ioValue": 2.000000200000001
                 },
                 {
                   "name": "y length",
-                  "ioValue": 355.6000004
+                  "ioValue": 14.000000400000001
                 }
               ]
             },
@@ -462,7 +462,7 @@
                   "ioValues": [
                     {
                       "name": "number or geometry",
-                      "ioValue": 177.8000002
+                      "ioValue": 7.000000200000001
                     }
                   ]
                 },
@@ -576,7 +576,7 @@
                   "ioValues": [
                     {
                       "name": "number or geometry",
-                      "ioValue": 50.800000200000035
+                      "ioValue": 2.000000200000001
                     }
                   ]
                 },
@@ -1123,7 +1123,7 @@
               "ioValues": [
                 {
                   "name": "x",
-                  "ioValue": 177.8000002
+                  "ioValue": 7.000000200000001
                 }
               ],
               "currentEquation": "x * 2"
@@ -1582,11 +1582,11 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 50.80000020000004
+                  "ioValue": 2.0000002
                 },
                 {
                   "name": "y length",
-                  "ioValue": 254.0000003999994
+                  "ioValue": 10.000000400000003
                 }
               ]
             },
@@ -1692,7 +1692,7 @@
                   "ioValues": [
                     {
                       "name": "number or geometry",
-                      "ioValue": 127.0000001999997
+                      "ioValue": 5.0000002000000014
                     }
                   ]
                 },
@@ -1806,7 +1806,7 @@
                   "ioValues": [
                     {
                       "name": "number or geometry",
-                      "ioValue": 50.80000020000004
+                      "ioValue": 2.0000002
                     }
                   ]
                 },
@@ -2359,7 +2359,7 @@
               "ioValues": [
                 {
                   "name": "x",
-                  "ioValue": 127.0000001999997
+                  "ioValue": 5.0000002000000014
                 }
               ],
               "currentEquation": "x * 2"
@@ -2627,7 +2627,7 @@
           "ioValues": [
             {
               "name": "number or geometry",
-              "ioValue": 127.0000002
+              "ioValue": 5.000000200000001
             }
           ]
         },
@@ -2888,8 +2888,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.6452,
-      "y": 0.1743,
+      "x": 0.6888,
+      "y": 0.12,
       "uniqueID": "id-936",
       "name": "ExplodeDisjoint",
       "ioValues": [
@@ -3145,7 +3145,7 @@
       "ap2ID": "id-845"
     }
   ],
-  "unitsKey": "Inches",
+  "unitsKey": "MM",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
 }
