@@ -12,29 +12,30 @@
     {
       "name": "slices_x_axis",
       "ioValue": [
-        1,
-        2.5,
-        4
+        "25",
+        "66",
+        "100"
       ]
     },
     {
       "name": "slices_y_axis",
       "ioValue": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        "25",
+        "50",
+        "75",
+        "100",
+        "125",
+        "150"
       ]
     },
     {
       "name": "gcode_bit_size",
-      "ioValue": 0.2499
+      "ioValue": 6.35,
+      "currentEquation": "6.35"
     },
     {
       "name": "slice_thickness",
-      "ioValue": 0.25
+      "ioValue": 7
     }
   ],
   "topLevel": true,
@@ -55,7 +56,7 @@
         },
         {
           "name": "yDist",
-          "ioValue": 5.000000200000001
+          "ioValue": 127.00000019999999
         },
         {
           "name": "zDist",
@@ -79,7 +80,7 @@
         },
         {
           "name": "yDist",
-          "ioValue": -5.000000200000001
+          "ioValue": -127.00000019999999
         },
         {
           "name": "zDist",
@@ -96,7 +97,7 @@
       "ioValues": [
         {
           "name": "x",
-          "ioValue": 5.000000200000001
+          "ioValue": 127.00000019999999
         }
       ],
       "currentEquation": "-1 * x"
@@ -137,7 +138,7 @@
         },
         {
           "name": "Tool Size",
-          "ioValue": 0.2499
+          "ioValue": 6.35
         },
         {
           "name": "Passes",
@@ -263,14 +264,14 @@
         },
         {
           "name": "sliceThickness",
-          "ioValue": 0.25
+          "ioValue": 7
         },
         {
           "name": "slicePositions",
           "ioValue": [
-            1,
-            2.5,
-            4
+            "25",
+            "66",
+            "100"
           ]
         }
       ],
@@ -302,14 +303,14 @@
             {
               "name": "positions",
               "ioValue": [
-                1,
-                2.5,
-                4
+                "25",
+                "66",
+                "100"
               ]
             },
             {
               "name": "thickness",
-              "ioValue": 0.25
+              "ioValue": 7
             }
           ],
           "topLevel": false,
@@ -352,11 +353,11 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 2.000000200000001
+                  "ioValue": 50.80000020000004
                 },
                 {
                   "name": "y length",
-                  "ioValue": 14.000000400000001
+                  "ioValue": 355.60000040000006
                 }
               ]
             },
@@ -372,7 +373,7 @@
                 },
                 {
                   "name": "height",
-                  "ioValue": 0.25
+                  "ioValue": 7
                 }
               ]
             },
@@ -462,7 +463,7 @@
                   "ioValues": [
                     {
                       "name": "number or geometry",
-                      "ioValue": 7.000000200000001
+                      "ioValue": 177.80000020000003
                     }
                   ]
                 },
@@ -576,7 +577,7 @@
                   "ioValues": [
                     {
                       "name": "number or geometry",
-                      "ioValue": 2.000000200000001
+                      "ioValue": 50.80000020000004
                     }
                   ]
                 },
@@ -974,9 +975,9 @@
                 {
                   "name": "offsets",
                   "ioValue": [
-                    1,
-                    2.5,
-                    4
+                    "25",
+                    "66",
+                    "100"
                   ]
                 },
                 {
@@ -1043,9 +1044,9 @@
                     {
                       "name": "offsets",
                       "ioValue": [
-                        1,
-                        2.5,
-                        4
+                        "25",
+                        "66",
+                        "100"
                       ]
                     },
                     {
@@ -1123,7 +1124,7 @@
               "ioValues": [
                 {
                   "name": "x",
-                  "ioValue": 7.000000200000001
+                  "ioValue": 177.80000020000003
                 }
               ],
               "currentEquation": "x * 2"
@@ -1487,17 +1488,17 @@
         },
         {
           "name": "sliceThickness",
-          "ioValue": 0.25
+          "ioValue": 7
         },
         {
           "name": "slicePositions",
           "ioValue": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6
+            "25",
+            "50",
+            "75",
+            "100",
+            "125",
+            "150"
           ]
         }
       ],
@@ -1529,17 +1530,17 @@
             {
               "name": "positions",
               "ioValue": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
+                "25",
+                "50",
+                "75",
+                "100",
+                "125",
+                "150"
               ]
             },
             {
               "name": "thickness",
-              "ioValue": 0.25
+              "ioValue": 7
             }
           ],
           "topLevel": false,
@@ -1582,11 +1583,11 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 2.0000002
+                  "ioValue": 50.800000200000014
                 },
                 {
                   "name": "y length",
-                  "ioValue": 10.000000400000003
+                  "ioValue": 254.0000004
                 }
               ]
             },
@@ -1602,7 +1603,7 @@
                 },
                 {
                   "name": "height",
-                  "ioValue": 0.25
+                  "ioValue": 7
                 }
               ]
             },
@@ -1692,7 +1693,7 @@
                   "ioValues": [
                     {
                       "name": "number or geometry",
-                      "ioValue": 5.0000002000000014
+                      "ioValue": 127.0000002
                     }
                   ]
                 },
@@ -1806,7 +1807,7 @@
                   "ioValues": [
                     {
                       "name": "number or geometry",
-                      "ioValue": 2.0000002
+                      "ioValue": 50.800000200000014
                     }
                   ]
                 },
@@ -2204,12 +2205,12 @@
                 {
                   "name": "offsets",
                   "ioValue": [
-                    1,
-                    2,
-                    3,
-                    4,
-                    5,
-                    6
+                    "25",
+                    "50",
+                    "75",
+                    "100",
+                    "125",
+                    "150"
                   ]
                 },
                 {
@@ -2276,12 +2277,12 @@
                     {
                       "name": "offsets",
                       "ioValue": [
-                        1,
-                        2,
-                        3,
-                        4,
-                        5,
-                        6
+                        "25",
+                        "50",
+                        "75",
+                        "100",
+                        "125",
+                        "150"
                       ]
                     },
                     {
@@ -2359,7 +2360,7 @@
               "ioValues": [
                 {
                   "name": "x",
-                  "ioValue": 5.0000002000000014
+                  "ioValue": 127.0000002
                 }
               ],
               "currentEquation": "x * 2"
@@ -2598,6 +2599,467 @@
       "options": []
     },
     {
+      "atomType": "GitHubMolecule",
+      "x": 0.1009,
+      "y": 0.7943,
+      "uniqueID": "id-3786",
+      "name": "Scale",
+      "ioValues": [
+        {
+          "name": "Geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Scale Factor",
+          "ioValue": 25.4,
+          "currentEquation": "25.4"
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-3776",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0231,
+          "y": 0.14,
+          "uniqueID": "id-3777",
+          "name": "Geometry",
+          "type": "geometry",
+          "options": []
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0231,
+          "y": 0.224,
+          "uniqueID": "id-3778",
+          "name": "Scale Factor",
+          "type": "number",
+          "options": []
+        },
+        {
+          "atomType": "Code",
+          "x": 0.5359,
+          "y": 0.6739,
+          "uniqueID": "id-3779",
+          "ioValues": [
+            {
+              "name": "inputShape",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "scaleFactor",
+              "ioValue": 25.4
+            }
+          ],
+          "interpreterVersion": 0,
+          "code": " \n      //Inputs:[inputShape, scaleFactor]\n      //This defines the molecules inputs and creates variables with the same names which can be referenced in the code\n      \n      //Takes the address and gets the shape from the library\n      let importedShape = library[inputShape]\n\n      let scaledShape = await Scale(inputShape, scaleFactor);\n      \n      \n      //Shapes stored in the library have tags, a color, a plane, and a bill of materials like this. We don't modify them here\n      let shape1 = {\n        geometry: [scaledShape],\n        tags: importedShape.tags,\n        color: importedShape.color,\n        plane: importedShape.plane,\n        bom: importedShape.bom\n      }\n      \n      return shape1\n      \n      \n      \n          /**\n          To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n          If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n          Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n          https://replicad.xyz/docs/introapp/UserGuide.html \n          Return a replicad object that includes geometry, color, tags and plane. \n      \n      \n          Example Code Atom:\n      \n            Inputs:[shape, x];\n      \n            let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n      \n            return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n      \n            - See more examples at _______ \n      \n      \n          */\n      "
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.2832,
+          "y": 0.2764,
+          "uniqueID": "id-3780",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 10
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.4154,
+          "y": 0.2547,
+          "uniqueID": "id-3781",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 10
+            }
+          ]
+        },
+        {
+          "atomType": "Code",
+          "x": 0.5148,
+          "y": 0.4534,
+          "uniqueID": "id-3782",
+          "ioValues": [
+            {
+              "name": "inputShape",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "scaleFactor",
+              "ioValue": 3
+            }
+          ],
+          "interpreterVersion": 0,
+          "code": " \n      //Inputs:[inputShape, scaleFactor]\n      //This defines the molecules inputs and creates variables with the same names which can be referenced in the code\n      \n      //Takes the address and gets the shape from the library\n      let importedShape = library[inputShape]\n\n      let scaledShape = await Scale(inputShape, scaleFactor);\n      \n      \n      //Shapes stored in the library have tags, a color, a plane, and a bill of materials like this. We don't modify them here\n      let shape1 = {\n        geometry: [scaledShape],\n        tags: importedShape.tags,\n        color: importedShape.color,\n        plane: importedShape.plane,\n        bom: importedShape.bom\n      }\n      \n      return shape1\n      \n      \n      \n          /**\n          To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n          If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n          Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n          https://replicad.xyz/docs/introapp/UserGuide.html \n          Return a replicad object that includes geometry, color, tags and plane. \n      \n      \n          Example Code Atom:\n      \n            Inputs:[shape, x];\n      \n            let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n      \n            return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n      \n            - See more examples at _______ \n      \n      \n          */\n      "
+        },
+        {
+          "atomType": "Assembly",
+          "x": 0.7304,
+          "y": 0.3727,
+          "uniqueID": "id-3783",
+          "ioValues": [
+            {
+              "name": "makeDisjoint",
+              "ioValue": true
+            },
+            {
+              "name": "Shape 1",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Shape 2",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Shape3",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.6263,
+          "y": 0.2733,
+          "uniqueID": "id-3784",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": 30
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Readme",
+          "x": 0.8176,
+          "y": 0.2981,
+          "uniqueID": "id-3785",
+          "name": "README",
+          "ioValues": [
+            {
+              "name": "value",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "readMeText": "Readme text here",
+          "global": true
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "inputShape",
+          "ap1ID": "id-3777",
+          "ap2ID": "id-3779"
+        },
+        {
+          "ap2Name": "scaleFactor",
+          "ap1ID": "id-3778",
+          "ap2ID": "id-3779"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-3779",
+          "ap2ID": "id-3776"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-3780",
+          "ap2ID": "id-3781"
+        },
+        {
+          "ap2Name": "inputShape",
+          "ap1ID": "id-3781",
+          "ap2ID": "id-3782"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-3781",
+          "ap2ID": "id-3784"
+        },
+        {
+          "ap2Name": "Shape 1",
+          "ap1ID": "id-3782",
+          "ap2ID": "id-3783"
+        },
+        {
+          "ap2Name": "Shape 2",
+          "ap1ID": "id-3784",
+          "ap2ID": "id-3783"
+        }
+      ],
+      "parentRepo": {
+        "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Scale/master/project.abundance?sanitize=true",
+        "dateCreated": "2025-06-26T17:06:11Z",
+        "dateModified": "2026-08-11T01:08:13Z",
+        "description": "Scales the input 2D or 3D geometry by the scale factor",
+        "forks": 1,
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/BarbourSmith/Scale",
+        "lastFoundGit": "2026-11-10T18:23:39.083Z",
+        "likes": 0,
+        "owner": "BarbourSmith",
+        "pngURL": "https://raw.githubusercontent.com/BarbourSmith/Scale/master/project.png?sanitize=true",
+        "privateRepo": false,
+        "pullRequests": [],
+        "ranking": 3,
+        "readme": "https://raw.githubusercontent.com/BarbourSmith/Scale/master/README.md?sanitize=true",
+        "searchField": "scale barboursmith scales the input 2d or 3d geometry by the scale factor ",
+        "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Scale/master/project.svg?sanitize=true",
+        "topMoleculeID": "",
+        "topics": [],
+        "userRanking": 0.2,
+        "userSetAsThumbnail": false,
+        "yyyy": 2025,
+        "repoName": "Scale",
+        "isLocal": false
+      },
+      "unitsKey": "Unitless",
+      "fileTypeVersion": 1,
+      "scaleToProjectUnits": true,
+      "lastReloadedFromGithubAt": 1794342976170
+    },
+    {
+      "atomType": "CutLayout",
+      "x": 0.9121,
+      "y": 0.7743,
+      "uniqueID": "id-3817",
+      "name": "Cut Layout",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Sheet Width",
+          "ioValue": 2438
+        },
+        {
+          "name": "Sheet Height",
+          "ioValue": 1219
+        },
+        {
+          "name": "Part Padding",
+          "ioValue": 10
+        },
+        {
+          "name": "Orientations",
+          "ioValue": 4
+        },
+        {
+          "name": "Search Time (minutes)",
+          "ioValue": 0.5
+        }
+      ],
+      "placements": [
+        [
+          {
+            "id": 7,
+            "rotate": 0,
+            "translate": {
+              "x": 30.899999618530273,
+              "y": 95.19000244140625
+            }
+          },
+          {
+            "id": 8,
+            "rotate": 180,
+            "translate": {
+              "x": 92.69999694824219,
+              "y": 95.18999481201172
+            }
+          },
+          {
+            "id": 5,
+            "rotate": 180,
+            "translate": {
+              "x": 61.790000915527344,
+              "y": 244.91998291015625
+            }
+          },
+          {
+            "id": 6,
+            "rotate": 180,
+            "translate": {
+              "x": 123.58000183105469,
+              "y": 275.33001708984375
+            }
+          },
+          {
+            "id": 0,
+            "rotate": 90,
+            "translate": {
+              "x": 69.48999786376953,
+              "y": 401.4100036621094
+            }
+          },
+          {
+            "id": 1,
+            "rotate": 270,
+            "translate": {
+              "x": 56.60000228881836,
+              "y": 463.2099914550781
+            }
+          },
+          {
+            "id": 4,
+            "rotate": 90,
+            "translate": {
+              "x": 68.9000015258789,
+              "y": 525
+            }
+          },
+          {
+            "id": 3,
+            "rotate": 90,
+            "translate": {
+              "x": 68.9000015258789,
+              "y": 586.77001953125
+            }
+          },
+          {
+            "id": 2,
+            "rotate": 90,
+            "translate": {
+              "x": 68.89999389648438,
+              "y": 648.5599975585938
+            }
+          }
+        ]
+      ],
+      "placementsVersion": 2
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.6413,
+      "y": 0.6657,
+      "uniqueID": "id-3829",
+      "name": "move_to_positive_quadrant",
+      "ioValues": [
+        {
+          "name": "toMove",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-3826",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0231,
+          "y": 0.14,
+          "uniqueID": "id-3827",
+          "name": "toMove",
+          "type": "geometry",
+          "options": []
+        },
+        {
+          "atomType": "Code",
+          "x": 0.3268,
+          "y": 0.4286,
+          "uniqueID": "id-3828",
+          "ioValues": [
+            {
+              "name": "shape",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "interpreterVersion": 1,
+          "code": "function run(shape: Assembly) {\n  let left = Number.POSITIVE_INFINITY\n  let south = Number.POSITIVE_INFINITY\n  let under = Number.POSITIVE_INFINITY\n  shape.onLeafs((leaf) => {\n    const bounds = leaf.geometry.boundingBox.bounds;\n    left = Math.min(left, bounds[0][0])\n    south = Math.min(south, bounds[0][1])\n    const zbound = bounds[0][2];\n    under = zbound != undefined ? Math.min(under, zbound) : under\n    return leaf;\n  })\n  console.log(`left: ${left}, south: ${south}, under ${under}`)\n  under = under == Number.POSITIVE_INFINITY ? 0 : under;\n  return shape.onLeafs((leaf) => {\n    leaf.geometry = leaf.geometry.translate(-1 * left, -1 * south, -1 * under)\n    return leaf;\n  })\n}",
+          "compiledCode": "\"use strict\";\nfunction run(shape) {\n    let left = Number.POSITIVE_INFINITY;\n    let south = Number.POSITIVE_INFINITY;\n    let under = Number.POSITIVE_INFINITY;\n    shape.onLeafs((leaf) => {\n        const bounds = leaf.geometry.boundingBox.bounds;\n        left = Math.min(left, bounds[0][0]);\n        south = Math.min(south, bounds[0][1]);\n        const zbound = bounds[0][2];\n        under = zbound != undefined ? Math.min(under, zbound) : under;\n        return leaf;\n    });\n    console.log(`left: ${left}, south: ${south}, under ${under}`);\n    under = under == Number.POSITIVE_INFINITY ? 0 : under;\n    return shape.onLeafs((leaf) => {\n        leaf.geometry = leaf.geometry.translate(-1 * left, -1 * south, -1 * under);\n        return leaf;\n    });\n}\n"
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "shape",
+          "ap1ID": "id-3827",
+          "ap2ID": "id-3828"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-3828",
+          "ap2ID": "id-3826"
+        }
+      ],
+      "parentRepo": {
+        "contentURL": "https://raw.githubusercontent.com/tristan-huber/move_to_positive_quadrant/master/project.abundance?sanitize=true",
+        "dateCreated": "2026-11-05T21:07:42Z",
+        "dateModified": "739925",
+        "description": "Move shape or drawing into the positive quadrant. Comparable to Above the origin but along every axis",
+        "forks": 0,
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/tristan-huber/move_to_positive_quadrant",
+        "lastFoundGit": "2026-11-10T18:23:39.083Z",
+        "likes": 0,
+        "owner": "tristan-huber",
+        "parentRepo": null,
+        "privateRepo": false,
+        "projectInputs": [
+          {
+            "name": "toMove",
+            "type": "geometry"
+          }
+        ],
+        "pullRequests": [],
+        "ranking": 2,
+        "readMe": "https://raw.githubusercontent.com/tristan-huber/move_to_positive_quadrant/master/README.md?sanitize=true",
+        "searchField": "move_to_positive_quadrant tristan-huber move shape or drawing into the positive quadrant. comparable to above the origin but along every axis abundance-tool",
+        "svgURL": "https://raw.githubusercontent.com/tristan-huber/move_to_positive_quadrant/master/project.svg?sanitize=true",
+        "topMoleculeID": "",
+        "topics": [
+          "abundance-tool"
+        ],
+        "userRanking": 0,
+        "yyyy": 2026,
+        "repoName": "move_to_positive_quadrant",
+        "isLocal": false
+      },
+      "unitsKey": "Unitless",
+      "fileTypeVersion": 1,
+      "scaleToProjectUnits": true,
+      "lastReloadedFromGithubAt": 1794343168942
+    },
+    {
       "atomType": "Input",
       "x": 0.0231,
       "y": 0.476,
@@ -2627,7 +3089,7 @@
           "ioValues": [
             {
               "name": "number or geometry",
-              "ioValue": 5.000000200000001
+              "ioValue": 127.00000019999999
             }
           ]
         },
@@ -2700,8 +3162,8 @@
     },
     {
       "atomType": "Intersection",
-      "x": 0.5898,
-      "y": 0.2429,
+      "x": 0.5853,
+      "y": 0.2171,
       "uniqueID": "id-540",
       "ioValues": [
         {
@@ -2741,7 +3203,7 @@
         },
         {
           "name": "minVolume",
-          "ioValue": 0.0625,
+          "ioValue": 1372,
           "currentEquation": "slice_thickness * slice_thickness * slice_thickness * 4"
         }
       ],
@@ -2791,8 +3253,8 @@
     },
     {
       "atomType": "CutOrient",
-      "x": 0.8301,
-      "y": 0.4886,
+      "x": 0.8281,
+      "y": 0.5143,
       "uniqueID": "id-874",
       "name": "Cut Orient",
       "ioValues": [
@@ -2803,8 +3265,8 @@
       ],
       "orientations": [
         {
-          "downwardFaceIndex": 16,
-          "faceCount": 30,
+          "downwardFaceIndex": 21,
+          "faceCount": 31,
           "faceNormal": [
             1.11022302462516e-16,
             1,
@@ -2812,7 +3274,7 @@
           ]
         },
         {
-          "downwardFaceIndex": 11,
+          "downwardFaceIndex": 13,
           "faceCount": 30,
           "faceNormal": [
             -1.11022302462516e-16,
@@ -2821,7 +3283,7 @@
           ]
         },
         {
-          "downwardFaceIndex": 11,
+          "downwardFaceIndex": 13,
           "faceCount": 30,
           "faceNormal": [
             -1.11022302462516e-16,
@@ -2830,7 +3292,7 @@
           ]
         },
         {
-          "downwardFaceIndex": 11,
+          "downwardFaceIndex": 13,
           "faceCount": 30,
           "faceNormal": [
             -1.11022302462516e-16,
@@ -2839,7 +3301,7 @@
           ]
         },
         {
-          "downwardFaceIndex": 11,
+          "downwardFaceIndex": 13,
           "faceCount": 30,
           "faceNormal": [
             -1.11022302462516e-16,
@@ -2848,8 +3310,8 @@
           ]
         },
         {
-          "downwardFaceIndex": 12,
-          "faceCount": 30,
+          "downwardFaceIndex": 14,
+          "faceCount": 31,
           "faceNormal": [
             -1.11022302462516e-16,
             -1,
@@ -2857,12 +3319,12 @@
           ]
         },
         {
-          "downwardFaceIndex": 1,
+          "downwardFaceIndex": 3,
           "faceCount": 28,
           "faceNormal": [
-            -1,
+            1,
             0,
-            -1.11022302462516e-16
+            1.11022302462516e-16
           ]
         },
         {
@@ -3025,9 +3487,9 @@
       "ap2ID": "id-868"
     },
     {
-      "ap2Name": "toMove",
+      "ap2Name": "Geometry",
       "ap1ID": "id-1734",
-      "ap2ID": "id-3079"
+      "ap2ID": "id-3786"
     },
     {
       "ap2Name": "slicePositions",
@@ -3077,6 +3539,21 @@
     {
       "ap2Name": "Tool Size",
       "ap1ID": "id-3463",
+      "ap2ID": "id-1721"
+    },
+    {
+      "ap2Name": "toMove",
+      "ap1ID": "id-3786",
+      "ap2ID": "id-3079"
+    },
+    {
+      "ap2Name": "toMove",
+      "ap1ID": "id-3817",
+      "ap2ID": "id-3829"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-3829",
       "ap2ID": "id-1721"
     },
     {
@@ -3132,12 +3609,12 @@
     {
       "ap2Name": "geometry",
       "ap1ID": "id-874",
-      "ap2ID": "id-1721"
+      "ap2ID": "id-1728"
     },
     {
       "ap2Name": "geometry",
       "ap1ID": "id-874",
-      "ap2ID": "id-1728"
+      "ap2ID": "id-3817"
     },
     {
       "ap2Name": "shape",
