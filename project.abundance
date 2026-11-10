@@ -29,12 +29,12 @@
       ]
     },
     {
-      "name": "slice_thickness",
-      "ioValue": 0.25
-    },
-    {
       "name": "gcode_bit_size",
       "ioValue": 0.2499
+    },
+    {
+      "name": "slice_thickness",
+      "ioValue": 0.25
     }
   ],
   "topLevel": true,
@@ -51,11 +51,11 @@
         },
         {
           "name": "xDist",
-          "ioValue": 7.000000200000001
+          "ioValue": 0
         },
         {
           "name": "yDist",
-          "ioValue": 0
+          "ioValue": 100.0000002
         },
         {
           "name": "zDist",
@@ -65,8 +65,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.4902,
-      "y": 0.6686,
+      "x": 0.4824,
+      "y": 0.6886,
       "uniqueID": "id-1685",
       "ioValues": [
         {
@@ -75,11 +75,11 @@
         },
         {
           "name": "xDist",
-          "ioValue": -7.000000200000001
+          "ioValue": 0
         },
         {
           "name": "yDist",
-          "ioValue": 0
+          "ioValue": -100.0000002
         },
         {
           "name": "zDist",
@@ -89,22 +89,22 @@
     },
     {
       "atomType": "Equation",
-      "x": 0.3822,
-      "y": 0.7114,
+      "x": 0.3789,
+      "y": 0.7771,
       "uniqueID": "id-1691",
       "name": "-1 * x",
       "ioValues": [
         {
           "name": "x",
-          "ioValue": 7.000000200000001
+          "ioValue": 100.0000002
         }
       ],
       "currentEquation": "-1 * x"
     },
     {
       "atomType": "Rotate",
-      "x": 0.5482,
-      "y": 0.8543,
+      "x": 0.5586,
+      "y": 0.8743,
       "uniqueID": "id-1695",
       "ioValues": [
         {
@@ -121,7 +121,8 @@
         },
         {
           "name": "z-axis degrees",
-          "ioValue": -90
+          "ioValue": 90,
+          "currentEquation": "90"
         }
       ]
     },
@@ -202,8 +203,8 @@
       "name": "ShapeToSlice",
       "type": "import",
       "options": [],
-      "fileName": "ExampleToSlice.step",
-      "fileSha": "1ec6fa1a6ce4b36581e079efa582bffe556b2c42",
+      "fileName": "Triangle_Anchor.step",
+      "fileSha": null,
       "fileType": "STEP",
       "repoOwner": "tristan-huber",
       "repoName": "CustomSlicer",
@@ -237,7 +238,7 @@
     {
       "atomType": "Input",
       "x": 0.0254,
-      "y": 0.4143,
+      "y": 0.3385,
       "uniqueID": "id-2083",
       "name": "slices_y_axis",
       "type": "array",
@@ -352,11 +353,11 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 2.000000200000001
+                  "ioValue": 29.000000100000026
                 },
                 {
                   "name": "y length",
-                  "ioValue": 14.000000400000001
+                  "ioValue": 200.00000040000003
                 }
               ]
             },
@@ -462,7 +463,7 @@
                   "ioValues": [
                     {
                       "name": "number or geometry",
-                      "ioValue": 7.000000200000001
+                      "ioValue": 100.00000020000002
                     }
                   ]
                 },
@@ -576,7 +577,7 @@
                   "ioValues": [
                     {
                       "name": "number or geometry",
-                      "ioValue": 2.000000200000001
+                      "ioValue": 29.000000100000026
                     }
                   ]
                 },
@@ -1123,7 +1124,7 @@
               "ioValues": [
                 {
                   "name": "x",
-                  "ioValue": 7.000000200000001
+                  "ioValue": 100.00000020000002
                 }
               ],
               "currentEquation": "x * 2"
@@ -1373,7 +1374,8 @@
         },
         {
           "name": "z-axis degrees",
-          "ioValue": 90
+          "ioValue": -90,
+          "currentEquation": "-90"
         }
       ]
     },
@@ -1582,11 +1584,11 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 2.000000200000001
+                  "ioValue": 29.00000010000001
                 },
                 {
                   "name": "y length",
-                  "ioValue": 10.000000400000001
+                  "ioValue": 200.00000040000003
                 }
               ]
             },
@@ -1692,7 +1694,7 @@
                   "ioValues": [
                     {
                       "name": "number or geometry",
-                      "ioValue": 5.000000200000001
+                      "ioValue": 100.00000020000002
                     }
                   ]
                 },
@@ -1806,7 +1808,7 @@
                   "ioValues": [
                     {
                       "name": "number or geometry",
-                      "ioValue": 2.000000200000001
+                      "ioValue": 29.00000010000001
                     }
                   ]
                 },
@@ -2359,7 +2361,7 @@
               "ioValues": [
                 {
                   "name": "x",
-                  "ioValue": 5.000000200000001
+                  "ioValue": 100.00000020000002
                 }
               ],
               "currentEquation": "x * 2"
@@ -2592,23 +2594,118 @@
     {
       "atomType": "Input",
       "x": 0.0254,
-      "y": 0.7798,
+      "y": 0.4308,
       "uniqueID": "id-3463",
       "name": "gcode_bit_size",
       "options": []
     },
     {
+      "atomType": "GitHubMolecule",
+      "x": 0.1159,
+      "y": 0.7886,
+      "uniqueID": "id-3779",
+      "name": "util.Mirror",
+      "ioValues": [
+        {
+          "name": "assembly",
+          "ioValue": 10
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-3776",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Code",
+          "x": 0.4388,
+          "y": 0.2325,
+          "uniqueID": "id-3777",
+          "ioValues": [
+            {
+              "name": "assembly",
+              "ioValue": 10
+            }
+          ],
+          "interpreterVersion": 1,
+          "code": "function run(assembly: Assembly) {\n  return assembly.onLeafs((leaf) => {\n    if (leaf.geometry instanceof replicad.Drawing) {\n      leaf.geometry = leaf.geometry.mirror([1, 0], [0, 0], \"plane\")\n    } else {\n      leaf.geometry = leaf.geometry.mirror(\"XZ\")\n      if (leaf.geometry instanceof replicad.Face) {\n        leaf.geometry = leaf.geometry.flipOrientation()\n      }\n    }\n    return leaf\n  })\n}",
+          "compiledCode": "\"use strict\";\nfunction run(assembly) {\n    return assembly.onLeafs((leaf) => {\n        if (leaf.geometry instanceof replicad.Drawing) {\n            leaf.geometry = leaf.geometry.mirror([1, 0], [0, 0], \"plane\");\n        }\n        else {\n            leaf.geometry = leaf.geometry.mirror(\"XZ\");\n            if (leaf.geometry instanceof replicad.Face) {\n                leaf.geometry = leaf.geometry.flipOrientation();\n            }\n        }\n        return leaf;\n    });\n}\n"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0254,
+          "y": 0.1538,
+          "uniqueID": "id-3778",
+          "name": "assembly",
+          "options": []
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-3777",
+          "ap2ID": "id-3776"
+        },
+        {
+          "ap2Name": "assembly",
+          "ap1ID": "id-3778",
+          "ap2ID": "id-3777"
+        }
+      ],
+      "parentRepo": {
+        "contentURL": "https://raw.githubusercontent.com/tristan-huber/util.Mirror/master/project.abundance?sanitize=true",
+        "dateCreated": "2026-07-09T18:32:34Z",
+        "dateModified": "2026-07-17T19:50:12Z",
+        "description": "Mirror an assembly across the XZ plane.",
+        "forks": 0,
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/tristan-huber/util.Mirror",
+        "lastFoundGit": "2026-11-10T10:23:38.864Z",
+        "likes": 0,
+        "owner": "tristan-huber",
+        "pngURL": "https://raw.githubusercontent.com/tristan-huber/util.Mirror/master/project.png?sanitize=true",
+        "privateRepo": false,
+        "pullRequests": [],
+        "ranking": 3,
+        "readme": "https://raw.githubusercontent.com/tristan-huber/util.Mirror/master/README.md?sanitize=true",
+        "searchField": "util.mirror tristan-huber mirror an assembly across the xz plane. abundance-tool",
+        "svgURL": "https://raw.githubusercontent.com/tristan-huber/util.Mirror/master/project.svg?sanitize=true",
+        "topMoleculeID": "",
+        "topics": [
+          "abundance-tool"
+        ],
+        "userRanking": 0,
+        "userSetAsThumbnail": false,
+        "yyyy": 2026,
+        "repoName": "util.Mirror",
+        "isLocal": false
+      },
+      "unitsKey": "Unitless",
+      "fileTypeVersion": 1,
+      "scaleToProjectUnits": true,
+      "lastReloadedFromGithubAt": 1794334869217
+    },
+    {
       "atomType": "Input",
       "x": 0.0254,
-      "y": 0.5657,
+      "y": 0.5231,
       "uniqueID": "id-460",
       "name": "slice_thickness",
       "options": []
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.2897,
-      "y": 0.8971,
+      "x": 0.2207,
+      "y": 0.5886,
       "uniqueID": "id-502",
       "name": "Width",
       "ioValues": [
@@ -2627,7 +2724,7 @@
           "ioValues": [
             {
               "name": "number or geometry",
-              "ioValue": 7.000000200000001
+              "ioValue": 100.0000002
             }
           ]
         },
@@ -2804,83 +2901,83 @@
       "orientations": [
         {
           "downwardFaceIndex": 11,
-          "faceCount": 30,
-          "faceNormal": [
-            -1.11022302462516e-16,
-            1,
-            -1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 9,
-          "faceCount": 30,
-          "faceNormal": [
-            -1.11022302462516e-16,
-            1,
-            -1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 9,
-          "faceCount": 30,
-          "faceNormal": [
-            -1.11022302462516e-16,
-            1,
-            -1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 9,
-          "faceCount": 30,
-          "faceNormal": [
-            -1.11022302462516e-16,
-            1,
-            -1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 9,
-          "faceCount": 30,
-          "faceNormal": [
-            -1.11022302462516e-16,
-            1,
-            -1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 12,
-          "faceCount": 30,
-          "faceNormal": [
-            -1.11022302462516e-16,
-            1,
-            -1.11022302462516e-16
-          ]
-        },
-        {
-          "downwardFaceIndex": 1,
           "faceCount": 28,
           "faceNormal": [
+            1.11022302462516e-16,
             -1,
-            0,
-            -1.11022302462516e-16
+            1.11022302462516e-16
           ]
         },
         {
-          "downwardFaceIndex": 1,
-          "faceCount": 28,
+          "downwardFaceIndex": 14,
+          "faceCount": 36,
           "faceNormal": [
+            1.11022302462516e-16,
             -1,
-            0,
-            -1.11022302462516e-16
+            1.11022302462516e-16
           ]
         },
         {
-          "downwardFaceIndex": 1,
-          "faceCount": 28,
+          "downwardFaceIndex": 15,
+          "faceCount": 40,
           "faceNormal": [
+            1.11022302462516e-16,
             -1,
+            1.11022302462516e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 15,
+          "faceCount": 38,
+          "faceNormal": [
+            1.11022302462516e-16,
+            -1,
+            1.11022302462516e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 15,
+          "faceCount": 38,
+          "faceNormal": [
+            1.11022302462516e-16,
+            -1,
+            1.11022302462516e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 15,
+          "faceCount": 38,
+          "faceNormal": [
+            1.11022302462516e-16,
+            -1,
+            1.11022302462516e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 3,
+          "faceCount": 29,
+          "faceNormal": [
+            1,
             0,
-            -1.11022302462516e-16
+            1.11022302462516e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 3,
+          "faceCount": 61,
+          "faceNormal": [
+            1,
+            0,
+            1.11022302462516e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 3,
+          "faceCount": 61,
+          "faceNormal": [
+            1,
+            0,
+            1.11022302462516e-16
           ]
         }
       ],
@@ -3010,7 +3107,7 @@
       "ap2ID": "id-1695"
     },
     {
-      "ap2Name": "xDist",
+      "ap2Name": "yDist",
       "ap1ID": "id-1691",
       "ap2ID": "id-1685"
     },
@@ -3055,11 +3152,6 @@
       "ap2ID": "id-1493"
     },
     {
-      "ap2Name": "Shape",
-      "ap1ID": "id-232",
-      "ap2ID": "id-502"
-    },
-    {
       "ap2Name": "profileShape",
       "ap1ID": "id-3079",
       "ap2ID": "id-2132"
@@ -3068,6 +3160,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-3079",
       "ap2ID": "id-232"
+    },
+    {
+      "ap2Name": "Shape",
+      "ap1ID": "id-3079",
+      "ap2ID": "id-502"
     },
     {
       "ap2Name": "geometry",
@@ -3090,7 +3187,7 @@
       "ap2ID": "id-3100"
     },
     {
-      "ap2Name": "xDist",
+      "ap2Name": "yDist",
       "ap1ID": "id-502",
       "ap2ID": "id-1493"
     },
