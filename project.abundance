@@ -30,8 +30,7 @@
     },
     {
       "name": "gcode_bit_size",
-      "ioValue": 6.35,
-      "currentEquation": "6.35"
+      "ioValue": 6.35
     },
     {
       "name": "slice_thickness",
@@ -128,8 +127,8 @@
     },
     {
       "atomType": "Gcode",
-      "x": 0.9303,
-      "y": 0.4171,
+      "x": 0.9329,
+      "y": 0.3771,
       "uniqueID": "id-1721",
       "ioValues": [
         {
@@ -2611,8 +2610,7 @@
         },
         {
           "name": "Scale Factor",
-          "ioValue": 25.4,
-          "currentEquation": "25.4"
+          "ioValue": 25.4
         }
       ],
       "topLevel": false,
@@ -2850,8 +2848,8 @@
     },
     {
       "atomType": "CutLayout",
-      "x": 0.9121,
-      "y": 0.7743,
+      "x": 0.8099,
+      "y": 0.6114,
       "uniqueID": "id-3817",
       "name": "Cut Layout",
       "ioValues": [
@@ -2960,8 +2958,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.6413,
-      "y": 0.6657,
+      "x": 0.8529,
+      "y": 0.4971,
       "uniqueID": "id-3829",
       "name": "move_to_positive_quadrant",
       "ioValues": [
@@ -3162,8 +3160,8 @@
     },
     {
       "atomType": "Intersection",
-      "x": 0.5853,
-      "y": 0.2171,
+      "x": 0.5378,
+      "y": 0.1314,
       "uniqueID": "id-540",
       "ioValues": [
         {
@@ -3193,8 +3191,8 @@
     },
     {
       "atomType": "Code",
-      "x": 0.7129,
-      "y": 0.3457,
+      "x": 0.6328,
+      "y": 0.2629,
       "uniqueID": "id-845",
       "ioValues": [
         {
@@ -3213,8 +3211,8 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.7318,
-      "y": 0.6457,
+      "x": 0.6693,
+      "y": 0.6114,
       "uniqueID": "id-864",
       "ioValues": [
         {
@@ -3229,8 +3227,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.7773,
-      "y": 0.8514,
+      "x": 0.7474,
+      "y": 0.8171,
       "uniqueID": "id-868",
       "ioValues": [
         {
@@ -3253,8 +3251,8 @@
     },
     {
       "atomType": "CutOrient",
-      "x": 0.8281,
-      "y": 0.5143,
+      "x": 0.7467,
+      "y": 0.52,
       "uniqueID": "id-874",
       "name": "Cut Orient",
       "ioValues": [
